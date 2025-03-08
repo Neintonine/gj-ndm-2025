@@ -1,0 +1,16 @@
+{
+    "name": "Devs.Melanie",
+    "rootNamespace": "",
+    "references": [
+        "GUID:bdfef112894d453158844c431ab65197"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
