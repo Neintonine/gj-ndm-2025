@@ -19,7 +19,7 @@ GameObject:
   - component: {fileID: 1409932290533394971}
   - component: {fileID: 7197418054067332920}
   m_Layer: 0
-  m_Name: Uboot (1)
+  m_Name: Uboot
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
