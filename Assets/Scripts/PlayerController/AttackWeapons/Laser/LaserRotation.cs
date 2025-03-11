@@ -2,15 +2,13 @@ using UnityEngine;
 
 public class LaserRotation : MonoBehaviour
 {
-    Vector3 targetRotation;
-
     [SerializeField] private Camera camera;
 
     [SerializeField] private float initalAngle;
 
     private void Update()
     {
-        targetRotation = camera.ScreenToWorldPoint(Input.mousePosition);
+        Vector3 targetRotation = camera.ScreenToWorldPoint(Input.mousePosition);
 
         float angleR = Mathf.Atan2(targetRotation.y - transform.position.y, targetRotation.x - transform.position.x);
 

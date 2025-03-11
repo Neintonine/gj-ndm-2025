@@ -6,6 +6,7 @@ public class DroneDeploy : MonoBehaviour
 
     public GameObject DroneSpawm;
     public GameObject Drone;
+    public CameraController CameraController;
 
     private GameObject currentDrone;
 
@@ -40,6 +41,7 @@ public class DroneDeploy : MonoBehaviour
     public void createDrone()
     {
         currentDrone = Instantiate(Drone, DroneSpawm.transform.position, Quaternion.identity);
+        this.CameraController.setFollowingTransform(this.currentDrone.transform);
     }
 
 

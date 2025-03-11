@@ -23,9 +23,7 @@ public class SonarPing : MonoBehaviour
     //Timer for bomb
     private void Update()
     {
-
-        Destroy(currentSonarPing, sonarPingDuration);
-
+        
         if (timer > 0)
         {
             timer -= Time.deltaTime;
@@ -45,9 +43,9 @@ public class SonarPing : MonoBehaviour
         if (timer <= 0)
         {
             currentSonarPing = Instantiate(sonarPing, sonarSpawn.transform.position, Quaternion.identity);
+            Destroy(currentSonarPing, sonarPingDuration);
+            
             timer = coolDown;
-
-            ExpansiveWave();
         }
 
     }
