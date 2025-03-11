@@ -19,7 +19,7 @@ GameObject:
   - component: {fileID: 1409932290533394971}
   - component: {fileID: 7197418054067332920}
   m_Layer: 0
-  m_Name: Uboot
+  m_Name: Uboot (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -34,7 +34,7 @@ Transform:
   m_GameObject: {fileID: 984015390649010722}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: -0.08369547, y: 0.16102505, z: 2}
+  m_LocalPosition: {x: 0.39, y: 0.01, z: 2}
   m_LocalScale: {x: 1.36, y: 2.7, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -535,7 +535,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 297b58b4517707d4db02757de0c70a5b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  camera: {fileID: 0}
+  camera: {fileID: 8141348021808857575, guid: e70b862eeabcfdf4692acff1fd0304b9, type: 3}
   initalAngle: 270
 --- !u!114 &4539627298785661639
 MonoBehaviour:
