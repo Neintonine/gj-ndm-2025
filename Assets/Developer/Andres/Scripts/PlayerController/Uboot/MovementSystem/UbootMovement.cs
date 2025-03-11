@@ -40,16 +40,6 @@ public class UbootMovement : MonoBehaviour
         bombSpawn.transform.position = new Vector3(-3 / 2, 0, 2);
     }
 
-    public void OnCollisionEnter2D(Collision2D collision)
-    {
-        if (collision.gameObject.tag == "Enemy")
-        {
-            Destroy(gameObject);
-        }
-    }
-
-
-
 
 
 }
