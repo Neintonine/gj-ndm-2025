@@ -3,7 +3,7 @@ using UnityEngine;
 
 public class CameraController : MonoBehaviour
 {
-   
+   public static CameraController instance;
 
     public float followSpeed = 10;
 
@@ -14,6 +14,7 @@ public class CameraController : MonoBehaviour
     private void Start()
     {
         _followingTransform = Uboot.transform;
+        instance = this;
     }
 
     private void Update()
