@@ -2181,6 +2181,10 @@ PrefabInstance:
       value: Uboot
       objectReference: {fileID: 0}
     - target: {fileID: 1213198685471020791, guid: dbff0fe3f9ea43044a456e96b7dd0134, type: 3}
+      propertyPath: Drone
+      value: 
+      objectReference: {fileID: 1748362272394370836, guid: e6a7f37c3cac9da4ca6156e67269c81d, type: 3}
+    - target: {fileID: 1213198685471020791, guid: dbff0fe3f9ea43044a456e96b7dd0134, type: 3}
       propertyPath: CameraController
       value: 
       objectReference: {fileID: 1883522763}
