@@ -24,7 +24,7 @@ public class Laser : MonoBehaviour
             Destroy(collision.gameObject);
         }
 
-        if (collision.gameObject.tag == "wallsBg")
+        if (collision.gameObject.tag == "wallBg")
         {
             Destroy(gameObject);
         }
