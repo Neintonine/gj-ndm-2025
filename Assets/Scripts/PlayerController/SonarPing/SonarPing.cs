@@ -18,7 +18,9 @@ public class SonarPing : MonoBehaviour
     public float sonarPingDuration = 5;
 
 
-    //Timer for bomb
+
+
+    //Timer for Sonar
     private void Update()
     {
         
@@ -29,7 +31,7 @@ public class SonarPing : MonoBehaviour
 
     }
 
-    //Creation of Bomb with a cooldown
+    //Creation of Sonar with a cooldown
     public void Sonarping()
     {
         
@@ -38,13 +40,9 @@ public class SonarPing : MonoBehaviour
         {
             currentSonarPing = Instantiate(sonarPing, sonarSpawn.transform.position, Quaternion.identity);
 
-
             Destroy(currentSonarPing, sonarPingDuration);
             
             timer = coolDown;
-
-            Invoke("returnColor", sonarPingDuration);
-
         }
 
     }

@@ -10,6 +10,7 @@ TagManager:
   - lasertransform
   - Rotate
   - EnemyAttack
+  - wallBg
   layers:
   - Default
   - TransparentFX

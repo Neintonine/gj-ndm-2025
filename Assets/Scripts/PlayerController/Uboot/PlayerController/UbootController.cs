@@ -107,10 +107,7 @@ public class UbootController : MonoBehaviour
     void stunOff()
     {
         Stun = false;
-
- 
-            this.enabled = true;
-
+        this.enabled = true;
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
@@ -129,6 +126,11 @@ public class UbootController : MonoBehaviour
             Stun = true;
 
             Invoke("stunOff", 2);
+        }
+
+        if (collision.gameObject.tag == "wallBg")
+        {
+            Destroy(gameObject);
         }
     }
 

@@ -58,7 +58,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: da28b58dd9b5037488137201918a11bf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 5
   bombAttack: {fileID: 6801027665197850805}
   ubootMovement: {fileID: 5214131939014225002}
   laserAttack: {fileID: 5980314546005076100}
@@ -66,6 +65,8 @@ MonoBehaviour:
   sonarPing: {fileID: 7720784799140054774}
   ubootBoost: {fileID: 4016521865558468610}
   health: {fileID: 422697960363930929}
+  speed: 5
+  Stun: 0
 --- !u!114 &5214131939014225002
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -108,6 +109,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   laserTransform: {fileID: 8079863712150829808}
   laser: {fileID: 362993461053653530, guid: 3243459d7c083ce4a837dd18aad9d0ba, type: 3}
+  laserSpawn: {fileID: 5774397926400984365}
   coolDown: 0.5
 --- !u!114 &6801027665197850805
 MonoBehaviour:
@@ -142,7 +144,7 @@ MonoBehaviour:
   sonarPing: {fileID: 7971923986356213832, guid: a7068d3b82c5e784482652c76323261f, type: 3}
   capsuleRenderer: {fileID: 2873914443771310323}
   coolDown: 10
-  sonarPingDuration: 5
+  sonarPingDuration: 3
 --- !u!114 &4016521865558468610
 MonoBehaviour:
   m_ObjectHideFlags: 0
