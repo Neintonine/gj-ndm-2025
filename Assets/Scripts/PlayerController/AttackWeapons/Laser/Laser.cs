@@ -4,7 +4,7 @@ using UnityEngine;
 public class Laser : MonoBehaviour
 {
 
-    [SerializeField] private float speedLaser = 6;
+    [SerializeField] private float speedLaser = 8;
 
     private void Update()
     {
@@ -22,6 +22,11 @@ public class Laser : MonoBehaviour
         {
             //Animation left!
             Destroy(collision.gameObject);
+        }
+
+        if (collision.gameObject.tag == "wallsBg")
+        {
+            Destroy(gameObject);
         }
     }
 
