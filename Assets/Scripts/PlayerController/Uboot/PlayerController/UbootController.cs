@@ -1,13 +1,11 @@
 using System;
+using Unity.VisualScripting;
 using UnityEngine;
-
-
+using UnityEngine.Rendering;
 
 public class UbootController : MonoBehaviour
 {
-    public float speed;
 
-    
 
     public BombAttack bombAttack;
     public UbootMovement ubootMovement;
@@ -17,7 +15,8 @@ public class UbootController : MonoBehaviour
     public UbootBoost ubootBoost;
     public Health health;
 
-
+    public float speed = 5;
+    public bool Stun;
 
     void Update()
     {
@@ -27,63 +26,92 @@ public class UbootController : MonoBehaviour
         dronedeploy();
         sonarPulse();
         activeBoost();
+
     }
 
 
     //Movement of the Uboot "WASD"
-    void Movement(float speed)
+    public void Movement(float speed)
     {
         ubootMovement.movement(speed);
+
+        stun();
     }
 
 
     //BombAttack with SpaceBar
-    void Bombattack()
+    public void Bombattack()
     {
         if (Input.GetKeyDown(KeyCode.Space))
         {
             bombAttack.bombAttack();
         }
+
+        stun();
     }
 
 
     //LaserAttack with left Click
-    void LaserAttack()
+    public void LaserAttack()
     {
         if (Input.GetMouseButtonDown(0))
         {
             laserAttack.Attack();
         }
-        
+
+        stun();
+
     }
 
 
     //DroneDeploy with E
-    void dronedeploy()
+    public void dronedeploy()
     {
         droneDeploy.dronedeploy();
+
+        stun();
     }
 
 
     //SonarPulse with R
-    void sonarPulse()
+    public void sonarPulse()
     {
         if (Input.GetKeyDown(KeyCode.R))
         {
             sonarPing.Sonarping();
         }
+
+        stun();
     }
 
     //Boost with G
-    void activeBoost()
+    public void activeBoost()
     {
         if (Input.GetKeyDown(KeyCode.G))
         {
             ubootBoost.boost();
         }
+
+        stun();
     }
 
+    public void stun()
+    {
+        if (Stun)
+        {
+            this.enabled = false;    
+        }  
+   
+    }
 
+    void stunOff()
+    {
+        Stun = false;
+
+ 
+            this.enabled = true;
+
+    }
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
@@ -97,8 +125,11 @@ public class UbootController : MonoBehaviour
             health.health -= 30;
 
             Destroy(collision.gameObject);
-        }
 
+            Stun = true;
+
+            Invoke("stunOff", 2);
+        }
     }
 
     private void OnTriggerEnter2D(Collider2D collision)

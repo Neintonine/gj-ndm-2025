@@ -26,6 +26,7 @@ public class SonarPing : MonoBehaviour
         {
             timer -= Time.deltaTime;
         }
+
     }
 
     //Creation of Bomb with a cooldown
@@ -43,7 +44,6 @@ public class SonarPing : MonoBehaviour
             timer = coolDown;
 
             Invoke("returnColor", sonarPingDuration);
-
 
         }
 
