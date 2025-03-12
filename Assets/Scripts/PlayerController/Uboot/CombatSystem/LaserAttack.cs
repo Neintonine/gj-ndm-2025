@@ -4,6 +4,7 @@ public class LaserAttack : MonoBehaviour
 {
     [SerializeField] private GameObject laserTransform;
     [SerializeField] private GameObject laser;
+    [SerializeField] private GameObject laserSpawn;
     
     private float timer;
 
@@ -23,7 +24,7 @@ public class LaserAttack : MonoBehaviour
    
             if (timer <= 0)
             {
-                Instantiate(laser, laserTransform.transform.position, laser.transform.rotation);
+                Instantiate(laser, laserTransform.transform.position, laserSpawn.transform.rotation);
                 timer = coolDown;
             }    
             

@@ -15,6 +15,8 @@ GameObject:
   - component: {fileID: 5980314546005076100}
   - component: {fileID: 6801027665197850805}
   - component: {fileID: 7720784799140054774}
+  - component: {fileID: 4016521865558468610}
+  - component: {fileID: 422697960363930929}
   - component: {fileID: 1409932290533394971}
   - component: {fileID: 7197418054067332920}
   m_Layer: 0
@@ -62,6 +64,8 @@ MonoBehaviour:
   laserAttack: {fileID: 5980314546005076100}
   droneDeploy: {fileID: 1213198685471020791}
   sonarPing: {fileID: 7720784799140054774}
+  ubootBoost: {fileID: 4016521865558468610}
+  health: {fileID: 422697960363930929}
 --- !u!114 &5214131939014225002
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -74,7 +78,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 79e7198331d8ac94a83da3368bf659bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bombSpawn: {fileID: 1632212833381680424}
+  laserRotation: {fileID: 5774397926400984365}
 --- !u!114 &1213198685471020791
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -88,7 +92,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   DroneSpawm: {fileID: 5532687190918340994}
-  Drone: {fileID: 1208444527322719436, guid: 46cc0c07d9cc1d0419c268f2f8792a3d, type: 3}
+  Drone: {fileID: 1748362272394370836, guid: e6a7f37c3cac9da4ca6156e67269c81d, type: 3}
+  CameraController: {fileID: 0}
 --- !u!114 &5980314546005076100
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -118,6 +123,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bomb: {fileID: 5563823752557916562, guid: 0de2a938e49c1ce489a51f4af6ef4d22, type: 3}
   bombSpawn: {fileID: 1632212833381680424}
+  bombInventory: 0
   coolDown: 3
 --- !u!114 &7720784799140054774
 MonoBehaviour:
@@ -131,10 +137,40 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d36cf3a207f5e7a4891ab133f7f2d02c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ubootController: {fileID: 8560983820893895405}
   sonarSpawn: {fileID: 7520390151597634974}
   sonarPing: {fileID: 7971923986356213832, guid: a7068d3b82c5e784482652c76323261f, type: 3}
-  coolDown: 5
+  capsuleRenderer: {fileID: 2873914443771310323}
+  coolDown: 10
   sonarPingDuration: 5
+--- !u!114 &4016521865558468610
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 984015390649010722}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d80823a2297159d4e9a62064a0d6c3ec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ubootController: {fileID: 8560983820893895405}
+  cooldown: 10
+  duration: 5
+--- !u!114 &422697960363930929
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 984015390649010722}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f55df96c809955e478cf14ccda3ed443, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 100
 --- !u!50 &1409932290533394971
 Rigidbody2D:
   serializedVersion: 5
@@ -143,7 +179,7 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 984015390649010722}
-  m_BodyType: 0
+  m_BodyType: 1
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
@@ -196,8 +232,8 @@ CapsuleCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: -0.011367736, y: -0.04062938}
-  m_Size: {x: 1.0227313, y: 3.6811903}
+  m_Offset: {x: -0.011367736, y: -0.023668285}
+  m_Size: {x: 1.0227247, y: 3.511578}
   m_Direction: 0
 --- !u!1 &1632212833381680424
 GameObject:
@@ -224,7 +260,7 @@ Transform:
   m_GameObject: {fileID: 1632212833381680424}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 1, w: 0}
-  m_LocalPosition: {x: -0.024, y: 1.943, z: 2.52}
+  m_LocalPosition: {x: -0.024, y: 2.065, z: 2.52}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -240,6 +276,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4355490896519208777}
   - component: {fileID: 7755885246420338917}
+  - component: {fileID: 4382966139744011392}
   m_Layer: 0
   m_Name: Capsule
   m_TagString: Untagged
@@ -305,7 +342,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: -9095717837082945937, guid: 207ee8102dd4143d288186ef0be518ee, type: 3}
   m_Color: {r: 0.26415092, g: 0.26415092, b: 0.26415092, a: 1}
   m_FlipX: 0
@@ -317,6 +354,23 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!111 &4382966139744011392
+Animation:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2873914443771310323}
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Animation: {fileID: 7400000, guid: 1c96b1fc972681145a593c98a838d097, type: 2}
+  m_Animations:
+  - {fileID: 7400000, guid: 1c96b1fc972681145a593c98a838d097, type: 2}
+  m_WrapMode: 0
+  m_PlayAutomatically: 1
+  m_AnimatePhysics: 0
+  m_UpdateMode: 0
+  m_CullingType: 0
 --- !u!1 &5532687190918340994
 GameObject:
   m_ObjectHideFlags: 0
@@ -395,7 +449,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 297b58b4517707d4db02757de0c70a5b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  camera: {fileID: 8141348021808857575, guid: e70b862eeabcfdf4692acff1fd0304b9, type: 3}
+  camera: {fileID: 0}
   initalAngle: 270
 --- !u!114 &4539627298785661639
 MonoBehaviour:

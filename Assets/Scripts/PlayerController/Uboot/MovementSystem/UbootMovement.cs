@@ -3,7 +3,7 @@ using UnityEngine;
 
 public class UbootMovement : MonoBehaviour
 {
-    public GameObject bombSpawn;
+    public GameObject laserRotation;
     
     //Movement of the Uboot
     public void movement(float speed)
@@ -22,22 +22,21 @@ public class UbootMovement : MonoBehaviour
 
 
 
-        //if (movementX > 0)
-        //{
-
-        //    bombSpawn.transform.position = new Vector3(3 / 2, 0, 2 );
-        //}
-        //else if (movementX < 0 )
-        //{
-            
-         //   turnAround();
-        //}
-    }
-
-    private void turnAround()
-    {
-
-        bombSpawn.transform.position = new Vector3(-3 / 2, 0, 2);
+        if (movementX < 0)
+        {
+            transform.localScale = new Vector3(1, -1, 1);
+            laserRotation.transform.localScale = new Vector3(1,-1,1);
+        }
+        else if (movementX > 0)
+        {
+            transform.localScale = new Vector3(1, 1, 1);
+            laserRotation.transform.localScale = new Vector3(1, 1, 1);
+        }
+        else
+        {
+            transform.localScale = new Vector3(1, 1, 1);
+            laserRotation.transform.localScale = new Vector3(1, 1, 1);
+        }
     }
 
     public void OnCollisionEnter2D(Collision2D collision)
