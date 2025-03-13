@@ -1,3 +1,4 @@
+using System;
 using Unity.VisualScripting;
 using UnityEngine;
 
@@ -15,8 +16,8 @@ public class UbootBoost : MonoBehaviour
 
     private void Awake()
     {
-        speedBoost = ubootController.speed;
-
+        speed = ubootController.speed;
+        speedBoost = speed * 2;
     }
 
 
@@ -36,7 +37,7 @@ public class UbootBoost : MonoBehaviour
         {
             timer = cooldown;
 
-            speed *= 2;
+            ubootController.speed = speedBoost;
 
             boostInventory -= 1; 
 
@@ -44,9 +45,9 @@ public class UbootBoost : MonoBehaviour
         }
     }
 
-    float StopBoost()
+    void StopBoost()
     {
-        return speed;
+        ubootController.speed = speed;
     }
 
 }
