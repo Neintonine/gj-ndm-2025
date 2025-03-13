@@ -32,13 +32,9 @@ public class NewBehaviourScript : MonoBehaviour
             rb.linearVelocity = Vector2.up * floatForce;
         }
         if (Input.GetKeyDown(KeyCode.E))
-        { 
+        {
             Destroy(gameObject);
             CameraController.instance.resetFollowingTransform();
-        }
-        
-    
+        }    
     }
-  
-
 }

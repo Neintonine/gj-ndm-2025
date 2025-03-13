@@ -2,15 +2,14 @@ using UnityEngine;
 
 public class DroneDeploy : MonoBehaviour
 {
-    
 
+    public UbootController ubootController;
     public GameObject droneSpawm;
     public GameObject drone;
     public CameraController cameraController;
 
     public GameObject currentDrone;
 
-    public bool isDroning;
 
 
 
@@ -23,7 +22,6 @@ public class DroneDeploy : MonoBehaviour
             if (Input.GetKeyDown(KeyCode.E))
             {
                 Createdrone();
-                isDroning = true;
             }
         }
     }

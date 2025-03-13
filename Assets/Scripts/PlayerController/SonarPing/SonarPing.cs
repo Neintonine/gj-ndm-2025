@@ -17,8 +17,6 @@ public class SonarPing : MonoBehaviour
     public float sonarPingDuration = 5;
 
 
-
-
     //Timer for Sonar
     private void Update()
     {

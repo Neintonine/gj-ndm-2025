@@ -5,7 +5,7 @@ using UnityEngine.Rendering;
 
 public class UbootController : MonoBehaviour
 {
-
+    
     public BombAttack bombAttack;
     public UbootMovement ubootMovement;
     public LaserAttack laserAttack;
@@ -49,27 +49,29 @@ public class UbootController : MonoBehaviour
             ubootBoost.Boost();
         }
 
-    }
-
-
-    public void Stun()
-    {
-        if (stun)
+        if (droneDeploy.currentDrone != null)
         {
-            return;   
+            Disablefunctions();
         }
 
-        stun = true;
-        this.enabled = false;
-        Invoke("StunOff", 2);  
     }
 
-
-    void StunOff()
+    //Disable all Functions of Uboot
+    public void Disablefunctions()
     {
-        stun = false;
-        this.enabled = true;
+        this.enabled = false;
+
+        GameObject.FindGameObjectWithTag("Rotate").GetComponent<LaserRotation>().enabled = false;        
     }
+
+    //Enable all Functions of Uboot
+    public void Enablefuctions()
+    {
+        this.enabled = true;
+
+        GameObject.FindGameObjectWithTag("Rotate").GetComponent<LaserRotation>().enabled = true;
+    }
+
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
