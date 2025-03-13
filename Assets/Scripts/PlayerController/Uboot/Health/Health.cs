@@ -1,18 +1,19 @@
+using System;
 using UnityEngine;
 
 public class Health : MonoBehaviour
 {
-    public float health = 100;
+    public int health = 100;
 
-    private void Update()
+    public event Action OnDeath;
+
+    public void Takedamage(int damage)
     {
+        health -= damage;
+
         if (health <= 0)
         {
-            Destroy(gameObject);
+            this.OnDeath?.Invoke();
         }
     }
-
-
-
-
 }

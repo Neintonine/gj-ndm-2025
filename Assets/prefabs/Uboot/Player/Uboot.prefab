@@ -21,7 +21,7 @@ GameObject:
   - component: {fileID: 7197418054067332920}
   m_Layer: 0
   m_Name: Uboot
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -66,7 +66,7 @@ MonoBehaviour:
   ubootBoost: {fileID: 4016521865558468610}
   health: {fileID: 422697960363930929}
   speed: 5
-  Stun: 0
+  stun: 0
 --- !u!114 &5214131939014225002
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -80,6 +80,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   laserRotation: {fileID: 5774397926400984365}
+  rb: {fileID: 1409932290533394971}
 --- !u!114 &1213198685471020791
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -92,9 +93,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 353507025bd4d284ba682d641efc17d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  DroneSpawm: {fileID: 5532687190918340994}
-  Drone: {fileID: 1748362272394370836, guid: e6a7f37c3cac9da4ca6156e67269c81d, type: 3}
-  CameraController: {fileID: 0}
+  droneSpawm: {fileID: 5532687190918340994}
+  drone: {fileID: 1748362272394370836, guid: e6a7f37c3cac9da4ca6156e67269c81d, type: 3}
+  cameraController: {fileID: 0}
 --- !u!114 &5980314546005076100
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -159,7 +160,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ubootController: {fileID: 8560983820893895405}
   cooldown: 10
-  duration: 5
 --- !u!114 &422697960363930929
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -181,12 +181,12 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 984015390649010722}
-  m_BodyType: 1
+  m_BodyType: 0
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDamping: 0
+  m_Mass: 10
+  m_LinearDamping: 2
   m_AngularDamping: 0.05
   m_GravityScale: 0
   m_Material: {fileID: 0}
@@ -196,7 +196,7 @@ Rigidbody2D:
   m_ExcludeLayers:
     serializedVersion: 2
     m_Bits: 0
-  m_Interpolate: 0
+  m_Interpolate: 1
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
@@ -414,10 +414,9 @@ GameObject:
   m_Component:
   - component: {fileID: 3753478763613754629}
   - component: {fileID: 2208007397593910218}
-  - component: {fileID: 4539627298785661639}
   m_Layer: 0
   m_Name: RotatePoint
-  m_TagString: Rotate
+  m_TagString: Untagged
   m_Icon: {fileID: 3443629218296621865, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -431,12 +430,11 @@ Transform:
   m_GameObject: {fileID: 5774397926400984365}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0.024, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 6643164058161445297}
-  - {fileID: 4600575405655068659}
   m_Father: {fileID: 8617835959266895927}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &2208007397593910218
@@ -453,21 +451,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   camera: {fileID: 0}
   initalAngle: 270
---- !u!114 &4539627298785661639
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5774397926400984365}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4fc58e4499c69841af47b20825d5091, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  laserTransform: {fileID: 8079863712150829808}
-  laser: {fileID: 362993461053653530, guid: 3243459d7c083ce4a837dd18aad9d0ba, type: 3}
-  coolDown: 0.5
 --- !u!1 &7232182288669405291
 GameObject:
   m_ObjectHideFlags: 0
@@ -493,12 +476,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7232182288669405291}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0.99953365, w: -0.030537274}
-  m_LocalPosition: {x: 0, y: -1.92, z: 1}
-  m_LocalScale: {x: 0.13150463, y: 0.2185, z: 0.28405}
+  m_LocalRotation: {x: -0, y: -0, z: 0.7283701, w: -0.6851839}
+  m_LocalPosition: {x: 0.4000028, y: 0, z: -5}
+  m_LocalScale: {x: 1.0307312, y: 1.4574817, z: 1.4202499}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 3753478763613754629}
+  m_Father: {fileID: 6643164058161445297}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 180}
 --- !u!114 &5439631076906534481
 MonoBehaviour:
@@ -595,7 +578,7 @@ GameObject:
   - component: {fileID: 6169932318753911782}
   m_Layer: 0
   m_Name: LaserTransform
-  m_TagString: lasertransform
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -609,10 +592,11 @@ Transform:
   m_GameObject: {fileID: 8079863712150829808}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: -0, z: 0.7071068, w: -0.7071068}
-  m_LocalPosition: {x: 0, y: -1.86, z: 2}
+  m_LocalPosition: {x: -0, y: -2.023, z: 2}
   m_LocalScale: {x: 0.15, y: 0.1275, z: 0.2}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 4600575405655068659}
   m_Father: {fileID: 3753478763613754629}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 270}
 --- !u!212 &6169932318753911782

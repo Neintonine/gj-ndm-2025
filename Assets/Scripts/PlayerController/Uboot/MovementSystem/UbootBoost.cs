@@ -8,8 +8,14 @@ public class UbootBoost : MonoBehaviour
 
     private float timer;
     public float cooldown = 10;
-    public float duration = 5;
     private float boostInventory = 3;
+
+    private float speed;
+
+    private void Awake()
+    {
+        speed = ubootController.speed;
+    }
 
 
     //Timer for boost
@@ -21,24 +27,24 @@ public class UbootBoost : MonoBehaviour
         }
     }
 
-    //Start of Boost with a cooldown
-    public void boost()
+    //Working on that
+    public void Boost()
     {
         if (timer <= 0 && boostInventory > 0)
         {
             timer = cooldown;
 
-            boostInventory -= 1;
+            speed *= 2;
 
-            ubootController.speed = 10;
+            boostInventory -= 1; 
 
-            Invoke("stopBoost", 5);
+            Invoke("StopBoost", 5);            
         }
     }
 
-    void stopBoost()
+    float StopBoost()
     {
-        ubootController.speed = 5;
+        return speed;
     }
 
 }

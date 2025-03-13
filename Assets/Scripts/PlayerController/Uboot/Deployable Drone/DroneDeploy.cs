@@ -4,44 +4,33 @@ public class DroneDeploy : MonoBehaviour
 {
     
 
-    public GameObject DroneSpawm;
-    public GameObject Drone;
-    public CameraController CameraController;
+    public GameObject droneSpawm;
+    public GameObject drone;
+    public CameraController cameraController;
 
-    private GameObject currentDrone;
+    public GameObject currentDrone;
 
-    private bool isdroning;
 
 
     //Deployment of Drone --> only deploy if there are no more drones
-    public void dronedeploy()
+    public void Dronedeploy()
     {
         //Animation maybe?
         if (currentDrone == null)
         {
             if (Input.GetKeyDown(KeyCode.E))
             {
-                createDrone();
+                Createdrone();
             }
         }
-
-        isDroning(isdroning);
     }
 
-    public void isDroning(bool isDroning)
-    {
-        if (currentDrone != null)
-        {
-            isDroning = true;
-        }
-
-    }
 
     //Creation of Drone
-    public void createDrone()
+    public void Createdrone()
     {
-        currentDrone = Instantiate(Drone, DroneSpawm.transform.position, Quaternion.identity);
-        this.CameraController.setFollowingTransform(this.currentDrone.transform);
+        currentDrone = Instantiate(drone, droneSpawm.transform.position, Quaternion.identity);
+        this.cameraController.setFollowingTransform(this.currentDrone.transform);
     }
 
 

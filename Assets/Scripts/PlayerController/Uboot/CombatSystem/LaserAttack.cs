@@ -5,10 +5,12 @@ public class LaserAttack : MonoBehaviour
     [SerializeField] private GameObject laserTransform;
     [SerializeField] private GameObject laser;
     [SerializeField] private GameObject laserSpawn;
-    
+
+
     private float timer;
 
     public float coolDown;
+
 
     private void Update()
     {
@@ -16,7 +18,6 @@ public class LaserAttack : MonoBehaviour
         {
             timer -= Time.deltaTime;
         }
-        
     }
 
     public void Attack()

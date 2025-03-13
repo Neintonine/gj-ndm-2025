@@ -202,7 +202,7 @@ GameObject:
   - component: {fileID: 118845572}
   m_Layer: 0
   m_Name: Walls
-  m_TagString: wallBg
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -349,7 +349,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 4
+  m_Constraints: 7
 --- !u!1 &186262316
 GameObject:
   m_ObjectHideFlags: 0
@@ -521,7 +521,7 @@ GameObject:
   - component: {fileID: 316058642}
   m_Layer: 0
   m_Name: Walls
-  m_TagString: wallBg
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1150,7 +1150,7 @@ GameObject:
   - component: {fileID: 793403068}
   m_Layer: 0
   m_Name: Walls
-  m_TagString: wallBg
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1532,7 +1532,7 @@ GameObject:
   - component: {fileID: 1131593518}
   m_Layer: 0
   m_Name: Walls (1)
-  m_TagString: wallBg
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1930,7 +1930,7 @@ GameObject:
   - component: {fileID: 1363674727}
   m_Layer: 0
   m_Name: Walls
-  m_TagString: wallBg
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3114,17 +3114,13 @@ PrefabInstance:
       value: Uboot
       objectReference: {fileID: 0}
     - target: {fileID: 1213198685471020791, guid: dbff0fe3f9ea43044a456e96b7dd0134, type: 3}
-      propertyPath: CameraController
+      propertyPath: cameraController
       value: 
       objectReference: {fileID: 1883522763}
     - target: {fileID: 2208007397593910218, guid: dbff0fe3f9ea43044a456e96b7dd0134, type: 3}
       propertyPath: camera
       value: 
       objectReference: {fileID: 1883522759}
-    - target: {fileID: 4382966139744011392, guid: dbff0fe3f9ea43044a456e96b7dd0134, type: 3}
-      propertyPath: m_PlayAutomatically
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 8617835959266895927, guid: dbff0fe3f9ea43044a456e96b7dd0134, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0

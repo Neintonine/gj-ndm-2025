@@ -6,7 +6,6 @@ using UnityEngine.Rendering;
 public class UbootController : MonoBehaviour
 {
 
-
     public BombAttack bombAttack;
     public UbootMovement ubootMovement;
     public LaserAttack laserAttack;
@@ -15,134 +14,70 @@ public class UbootController : MonoBehaviour
     public UbootBoost ubootBoost;
     public Health health;
 
-    public float speed = 5;
-    public bool Stun;
+    public float speed = 5f;
+    public bool stun;
 
     void Update()
     {
-        Movement(speed);
-        Bombattack();
-        LaserAttack();
-        dronedeploy();
-        sonarPulse();
-        activeBoost();
+        //Movement "WASD"
+        ubootMovement.Movement(speed);
 
-    }
-
-
-    //Movement of the Uboot "WASD"
-    public void Movement(float speed)
-    {
-        ubootMovement.movement(speed);
-
-        stun();
-    }
-
-
-    //BombAttack with SpaceBar
-    public void Bombattack()
-    {
+        //Bomb Attack Space
         if (Input.GetKeyDown(KeyCode.Space))
         {
-            bombAttack.bombAttack();
+            bombAttack.Bombattack();
         }
 
-        stun();
-    }
-
-
-    //LaserAttack with left Click
-    public void LaserAttack()
-    {
+        //Laser Attack left click mouse
         if (Input.GetMouseButtonDown(0))
         {
             laserAttack.Attack();
         }
 
-        stun();
+        //Drone Deploy E
+        droneDeploy.Dronedeploy();
 
-    }
-
-
-    //DroneDeploy with E
-    public void dronedeploy()
-    {
-        droneDeploy.dronedeploy();
-
-        stun();
-    }
-
-
-    //SonarPulse with R
-    public void sonarPulse()
-    {
+        //Sonar Ping R
         if (Input.GetKeyDown(KeyCode.R))
         {
             sonarPing.Sonarping();
         }
 
-        stun();
-    }
-
-    //Boost with G
-    public void activeBoost()
-    {
+        //Speedboost G
         if (Input.GetKeyDown(KeyCode.G))
         {
-            ubootBoost.boost();
+            ubootBoost.Boost();
         }
 
-        stun();
     }
 
-    public void stun()
+
+    public void Stun()
     {
-        if (Stun)
+        if (stun)
         {
-            this.enabled = false;    
-        }  
-   
+            return;   
+        }
+
+        stun = true;
+        this.enabled = false;
+        Invoke("StunOff", 2);  
     }
 
-    void stunOff()
+
+    void StunOff()
     {
-        Stun = false;
+        stun = false;
         this.enabled = true;
-    }
-
-    private void OnCollisionEnter2D(Collision2D collision)
-    {
-        if (collision.gameObject.tag == "Enemy")
-        {
-            Destroy(gameObject);
-        }
-
-        if (collision.gameObject.tag == "EnemyAttack")
-        {
-            health.health -= 30;
-
-            Destroy(collision.gameObject);
-
-            Stun = true;
-
-            Invoke("stunOff", 2);
-        }
-
-        if (collision.gameObject.tag == "wallBg")
-        {
-            Destroy(gameObject);
-        }
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.tag == "Bomb")
         {
-            bombAttack.pickupBomb();
+            bombAttack.Pickupbomb();
 
             Destroy(collision.gameObject);
         }
     }
-
-
 }

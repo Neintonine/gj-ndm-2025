@@ -7,10 +7,9 @@ TagManager:
   - Bomb
   - wall
   - Enemy
-  - lasertransform
-  - Rotate
   - EnemyAttack
-  - wallBg
+  - Rotate
+  - lasertransform
   layers:
   - Default
   - TransparentFX

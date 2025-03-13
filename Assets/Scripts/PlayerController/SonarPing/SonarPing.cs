@@ -3,7 +3,6 @@ using UnityEngine.U2D;
 
 public class SonarPing : MonoBehaviour
 {
-
     public UbootController ubootController;
     public GameObject sonarSpawn;
     public GameObject sonarPing;
@@ -40,12 +39,11 @@ public class SonarPing : MonoBehaviour
         {
             currentSonarPing = Instantiate(sonarPing, sonarSpawn.transform.position, Quaternion.identity);
 
-            currentSonarPing.transform.SetParent(sonarSpawn.transform);
-
             Destroy(currentSonarPing, sonarPingDuration);
             
             timer = coolDown;
         }
+
 
     }
 

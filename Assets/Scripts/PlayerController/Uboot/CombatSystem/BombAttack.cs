@@ -24,7 +24,7 @@ public class BombAttack : MonoBehaviour
     }
 
     //Creation of Bomb with a cooldown
-    public void bombAttack()
+    public void Bombattack()
     {
         if (timer <= 0 && bombInventory > 0)
         {
@@ -37,7 +37,7 @@ public class BombAttack : MonoBehaviour
         
     }
 
-    public void pickupBomb()
+    public void Pickupbomb()
     {
         bombInventory += 1;
     }
