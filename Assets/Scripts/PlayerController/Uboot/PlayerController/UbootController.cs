@@ -13,6 +13,7 @@ public class UbootController : MonoBehaviour
     public SonarPing sonarPing;
     public UbootBoost ubootBoost;
     public Health health;
+    public LaserRotation laserRotation;
 
     public float speed = 5f;
     public bool stun;
@@ -61,7 +62,7 @@ public class UbootController : MonoBehaviour
     {
         this.enabled = false;
 
-        GameObject.FindGameObjectWithTag("Rotate").GetComponent<LaserRotation>().enabled = false;        
+        this.laserRotation.enabled = false;        
     }
 
     //Enable all Functions of Uboot
@@ -69,7 +70,7 @@ public class UbootController : MonoBehaviour
     {
         this.enabled = true;
 
-        GameObject.FindGameObjectWithTag("Rotate").GetComponent<LaserRotation>().enabled = true;
+        this.laserRotation.enabled = true;
     }
 
 

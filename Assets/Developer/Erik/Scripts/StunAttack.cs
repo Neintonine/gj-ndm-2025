@@ -8,6 +8,11 @@ public class StunAttack : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        ubootController.Disablefunctions();
+        if (!collision.gameObject.CompareTag("Player"))
+        {
+            return;
+        }
+        
+        this.ubootController.Disablefunctions();
     }
 }
