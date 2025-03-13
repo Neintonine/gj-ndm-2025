@@ -9,7 +9,10 @@ public class AIChase : MonoBehaviour
     public float speed;
     public float distanceBetween;
     private float distance;
+
     public Health health;
+    public int damage;
+
     void Start()
     {
        enemy.transform.position = spawnPoint.transform.position;
@@ -34,7 +37,8 @@ public class AIChase : MonoBehaviour
             float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
             transform.position = Vector2.MoveTowards(this.transform.position, spawnPoint.transform.position, speed * Time.deltaTime);
             transform.rotation = Quaternion.Euler(Vector3.forward * angle);
-
         }
+
+        health.Takedamage(damage);
     }
 }

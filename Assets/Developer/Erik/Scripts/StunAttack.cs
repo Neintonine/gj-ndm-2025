@@ -2,13 +2,12 @@ using UnityEngine;
 
 public class StunAttack : MonoBehaviour
 {
-    public PlayerMovement playerMovement;
+
     public float stunDuration;
-    public float knockbackPower;
+    public UbootController ubootController;
 
-    void OnTriggerEnter2D(Collider2D collision)
+    private void OnTriggerEnter2D(Collider2D collision)
     {
-        playerMovement.stunCounter = stunDuration;
-
+        ubootController.Disablefunctions();
     }
 }
