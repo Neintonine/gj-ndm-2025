@@ -1,15 +1,18 @@
 using UnityEngine;
+using UnityEngine.UIElements;
 
 public class AIChase : MonoBehaviour
 {
     public GameObject player;
+    public GameObject enemy;
+    public GameObject spawnPoint;
     public float speed;
     public float distanceBetween;
     private float distance;
 
     void Start()
     {
-        
+       enemy.transform.position = spawnPoint.transform.position;
     }
    
     void Update()
@@ -24,6 +27,14 @@ public class AIChase : MonoBehaviour
             float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
             transform.position = Vector2.MoveTowards(this.transform.position, player.transform.position, speed * Time.deltaTime);
             transform.rotation = Quaternion.Euler(Vector3.forward * angle);
+        }else
+        {
+            Vector2 direction = spawnPoint.transform.position - transform.position;
+            direction.Normalize();
+            float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
+            transform.position = Vector2.MoveTowards(this.transform.position, spawnPoint.transform.position, speed * Time.deltaTime);
+            transform.rotation = Quaternion.Euler(Vector3.forward * angle);
+
         }
     }
 }
