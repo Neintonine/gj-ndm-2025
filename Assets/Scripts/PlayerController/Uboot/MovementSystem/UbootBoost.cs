@@ -11,10 +11,12 @@ public class UbootBoost : MonoBehaviour
     private float boostInventory = 3;
 
     private float speed;
+    private float speedBoost;
 
     private void Awake()
     {
-        speed = ubootController.speed;
+        speedBoost = ubootController.speed;
+
     }
 
 

@@ -10,6 +10,8 @@ public class DroneDeploy : MonoBehaviour
 
     public GameObject currentDrone;
 
+    public bool isDroning;
+
 
 
     //Deployment of Drone --> only deploy if there are no more drones
@@ -21,6 +23,7 @@ public class DroneDeploy : MonoBehaviour
             if (Input.GetKeyDown(KeyCode.E))
             {
                 Createdrone();
+                isDroning = true;
             }
         }
     }

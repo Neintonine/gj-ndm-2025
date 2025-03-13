@@ -96,6 +96,8 @@ MonoBehaviour:
   droneSpawm: {fileID: 5532687190918340994}
   drone: {fileID: 1748362272394370836, guid: e6a7f37c3cac9da4ca6156e67269c81d, type: 3}
   cameraController: {fileID: 0}
+  currentDrone: {fileID: 0}
+  isDroning: 0
 --- !u!114 &5980314546005076100
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -414,6 +416,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3753478763613754629}
   - component: {fileID: 2208007397593910218}
+  - component: {fileID: 1607790547873827682}
   m_Layer: 0
   m_Name: RotatePoint
   m_TagString: Untagged
@@ -451,6 +454,27 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   camera: {fileID: 0}
   initalAngle: 270
+--- !u!114 &1607790547873827682
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5774397926400984365}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da28b58dd9b5037488137201918a11bf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bombAttack: {fileID: 6801027665197850805}
+  ubootMovement: {fileID: 5214131939014225002}
+  laserAttack: {fileID: 5980314546005076100}
+  droneDeploy: {fileID: 1213198685471020791}
+  sonarPing: {fileID: 7720784799140054774}
+  ubootBoost: {fileID: 4016521865558468610}
+  health: {fileID: 422697960363930929}
+  speed: 5
+  stun: 0
 --- !u!1 &7232182288669405291
 GameObject:
   m_ObjectHideFlags: 0
