@@ -9,7 +9,7 @@ public class AIChase : MonoBehaviour
     public float speed;
     public float distanceBetween;
     private float distance;
-
+    public Health health;
     void Start()
     {
        enemy.transform.position = spawnPoint.transform.position;

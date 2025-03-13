@@ -12,40 +12,38 @@ public class EnemyPatrol : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
         currentPoint = pointB.transform;
+        transform.position = pointA.transform.position;
     }
 
     
     void Update()
     {
-        Vector2 point = currentPoint.position - transform.position;
+        Vector2 direction = currentPoint.position - transform.position;
+        direction.Normalize();
         if(currentPoint == pointB.transform)
         {
-            rb.linearVelocity = new Vector2(speed, 0);
+            float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
+            transform.position = Vector2.MoveTowards(this.transform.position, currentPoint.transform.position, speed * Time.deltaTime);
+            transform.rotation = Quaternion.Euler(Vector3.forward * angle);            
         }
-        else
+        if(currentPoint == pointA.transform)
         {
-            rb.linearVelocity = new Vector2(-speed, 0);
+            float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
+            transform.position = Vector2.MoveTowards(this.transform.position, currentPoint.transform.position, speed * Time.deltaTime);
+            transform.rotation = Quaternion.Euler(Vector3.forward * angle);
         }
 
         if (Vector2.Distance(transform.position, currentPoint.position) < 0.5f && currentPoint == pointB.transform)
-        {
-            flip();
+        {            
             currentPoint = pointA.transform;
         }
 
         if (Vector2.Distance(transform.position, currentPoint.position) < 0.5f && currentPoint == pointA.transform)
-        {
-            flip();
+        {            
             currentPoint = pointB.transform;
         }
     }
 
-    private void flip()
-    {
-        Vector3 localScale = transform.localScale;
-        localScale.y *= -1;
-        transform.localScale = localScale;
-    }
 
     private void OnDrawGizmos()
     {
