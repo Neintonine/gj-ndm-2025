@@ -94,7 +94,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 353507025bd4d284ba682d641efc17d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ubootController: {fileID: 0}
+  ubootController: {fileID: 8560983820893895405}
   droneSpawm: {fileID: 5532687190918340994}
   drone: {fileID: 1748362272394370836, guid: e6a7f37c3cac9da4ca6156e67269c81d, type: 3}
   cameraController: {fileID: 0}
