@@ -30,8 +30,10 @@ public class DroneDeploy : MonoBehaviour
     //Creation of Drone
     public void Createdrone()
     {
+        
         currentDrone = Instantiate(drone, droneSpawm.transform.position, Quaternion.identity);
         this.cameraController.setFollowingTransform(this.currentDrone.transform);
+        currentDrone.GetComponent<Drone>().UbootControllerDrone = ubootController;
     }
 
 

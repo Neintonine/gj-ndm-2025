@@ -96,7 +96,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ubootController: {fileID: 8560983820893895405}
   droneSpawm: {fileID: 5532687190918340994}
-  drone: {fileID: 1748362272394370836, guid: e6a7f37c3cac9da4ca6156e67269c81d, type: 3}
+  drone: {fileID: 4132836794953582622, guid: fbe9de324d7d1054f9544efc29948e4f, type: 3}
   cameraController: {fileID: 0}
   currentDrone: {fileID: 0}
 --- !u!114 &5980314546005076100
@@ -129,7 +129,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bomb: {fileID: 5563823752557916562, guid: 0de2a938e49c1ce489a51f4af6ef4d22, type: 3}
   bombSpawn: {fileID: 1632212833381680424}
-  bombInventory: 0
+  bombInventory: 4
   coolDown: 3
 --- !u!114 &7720784799140054774
 MonoBehaviour:

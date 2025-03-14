@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 7877604546513342305}
   - component: {fileID: 7393130987452602292}
   - component: {fileID: 1611764869126202166}
+  - component: {fileID: 7951650064495386589}
   m_Layer: 0
   m_Name: Drone
   m_TagString: Untagged
@@ -50,7 +51,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDamping: 0
   m_AngularDamping: 5
-  m_GravityScale: 0.03
+  m_GravityScale: 1
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -122,7 +123,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 8
   floatForce: 10
-  body: {fileID: 0}
+  UbootControllerDrone: {fileID: 0}
+  BombAttackDrone: {fileID: 7951650064495386589}
 --- !u!212 &1611764869126202166
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -178,3 +180,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &7951650064495386589
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4132836794953582622}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ddd7febb740ada4c9a34372c495e857, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bomb: {fileID: 0}
+  bombSpawn: {fileID: 0}
+  bombInventory: 0
+  coolDown: 0

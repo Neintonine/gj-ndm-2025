@@ -1,15 +1,18 @@
 using UnityEngine;
-using UnityEngine.InputSystem;
 
-public class NewBehaviourScript : MonoBehaviour
+
+public class Drone : MonoBehaviour
 {
     private Rigidbody2D rb;
     public float speed = 8f;
     public float floatForce = 10f;
     private Vector2 movement;
     private SpriteRenderer spriteRenderer;
+    public UbootController UbootControllerDrone;
 
-    public Rigidbody body;
+    public BombAttack BombAttackDrone;
+
+    
  
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -35,6 +38,18 @@ public class NewBehaviourScript : MonoBehaviour
         {
             Destroy(gameObject);
             CameraController.instance.resetFollowingTransform();
+            UbootControllerDrone.Enablefuctions();
+
         }    
+    }
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.tag == "Bomb")
+        {
+            BombAttackDrone.Pickupbomb();
+
+
+            Destroy(collision.gameObject);
+        }
     }
 }
