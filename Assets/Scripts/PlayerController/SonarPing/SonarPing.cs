@@ -37,7 +37,7 @@ public class SonarPing : MonoBehaviour
         {
             currentSonarPing = Instantiate(sonarPing, sonarSpawn.transform.position, Quaternion.identity);
 
-            Destroy(currentSonarPing, sonarPingDuration);
+            //Destroy(currentSonarPing, sonarPingDuration);
             
             timer = coolDown;
         }
