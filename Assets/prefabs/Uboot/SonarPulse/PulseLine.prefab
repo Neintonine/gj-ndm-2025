@@ -151,10 +151,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 8245982291985979082}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b8c4a5ea276e4c8687f8843bff01220d, type: 3}
+  m_Script: {fileID: 11500000, guid: 60535457458498028bec5e13545de991, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   Alpha: 1
+  Destory: 0
   lineRenderer: {fileID: 5984426663492648576}
 --- !u!111 &3285746398633231597
 Animation:
