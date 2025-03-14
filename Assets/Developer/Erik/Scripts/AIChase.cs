@@ -9,8 +9,7 @@ public class AIChase : MonoBehaviour
     public float distanceBetween;
     private float distance;
 
-    public Health health;
-    public int damage;
+
 
     void Start()
     {
@@ -33,6 +32,6 @@ public class AIChase : MonoBehaviour
         transform.position = Vector2.MoveTowards(this.transform.position, target.position, speed * Time.deltaTime);
         transform.rotation = Quaternion.Euler(Vector3.forward * angle);
 
-        health.Takedamage(damage);
+               
     }
 }

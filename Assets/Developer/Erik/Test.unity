@@ -374,6 +374,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: da28b58dd9b5037488137201918a11bf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!50 &445404602 stripped
+Rigidbody2D:
+  m_CorrespondingSourceObject: {fileID: 1409932290533394971, guid: dbff0fe3f9ea43044a456e96b7dd0134, type: 3}
+  m_PrefabInstance: {fileID: 1044063476}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &787249237
 GameObject:
   m_ObjectHideFlags: 0
@@ -384,8 +389,9 @@ GameObject:
   m_Component:
   - component: {fileID: 787249239}
   - component: {fileID: 787249238}
+  - component: {fileID: 787249243}
   - component: {fileID: 787249240}
-  - component: {fileID: 787249241}
+  - component: {fileID: 787249242}
   m_Layer: 0
   m_Name: EnemyChasing
   m_TagString: Untagged
@@ -479,9 +485,7 @@ MonoBehaviour:
   spawnPoint: {fileID: 244742154}
   speed: 1
   distanceBetween: 4
-  health: {fileID: 787249241}
-  damage: 10
---- !u!114 &787249241
+--- !u!114 &787249242
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -490,10 +494,57 @@ MonoBehaviour:
   m_GameObject: {fileID: 787249237}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f55df96c809955e478cf14ccda3ed443, type: 3}
+  m_Script: {fileID: 11500000, guid: 96becd4646116fb4ea7e0b251f5ae1fb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 100
+  player: {fileID: 445404602}
+  knockbackPower: 150
+--- !u!61 &787249243
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 787249237}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 0.5}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Size: {x: 1, y: 0.5}
+  m_EdgeRadius: 0
 --- !u!1 &806477718
 GameObject:
   m_ObjectHideFlags: 0
@@ -504,8 +555,8 @@ GameObject:
   m_Component:
   - component: {fileID: 806477721}
   - component: {fileID: 806477720}
+  - component: {fileID: 806477723}
   - component: {fileID: 806477719}
-  - component: {fileID: 806477722}
   m_Layer: 0
   m_Name: EnemyChasing (1)
   m_TagString: Untagged
@@ -529,8 +580,6 @@ MonoBehaviour:
   spawnPoint: {fileID: 1336245543}
   speed: 1
   distanceBetween: 4
-  health: {fileID: 806477722}
-  damage: 10
 --- !u!212 &806477720
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -601,19 +650,52 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &806477722
-MonoBehaviour:
+--- !u!61 &806477723
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 806477718}
   m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f55df96c809955e478cf14ccda3ed443, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  health: 100
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 0.5}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Size: {x: 1, y: 0.5}
+  m_EdgeRadius: 0
 --- !u!1001 &1044063476
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -953,6 +1035,7 @@ GameObject:
   - component: {fileID: 1859526915}
   - component: {fileID: 1859526918}
   - component: {fileID: 1859526919}
+  - component: {fileID: 1859526920}
   m_Layer: 0
   m_Name: EnemyPatrolling
   m_TagString: Untagged
@@ -1103,8 +1186,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 47f4c977b04c7624c91cd5fc5a2cbeb4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  stunDuration: 5
+  stunDuration: 2
   ubootController: {fileID: 445404600}
+--- !u!114 &1859526920
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1859526913}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 96becd4646116fb4ea7e0b251f5ae1fb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 445404602}
+  knockbackPower: 150
 --- !u!1 &1969458915
 GameObject:
   m_ObjectHideFlags: 0
