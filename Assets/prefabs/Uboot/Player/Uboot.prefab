@@ -145,7 +145,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ubootController: {fileID: 8560983820893895405}
   sonarSpawn: {fileID: 7520390151597634974}
-  sonarPing: {fileID: 7971923986356213832, guid: a7068d3b82c5e784482652c76323261f, type: 3}
+  sonarPing: {fileID: 634252326650780916, guid: f151116799aa8caf3835948e715519ce, type: 3}
   capsuleRenderer: {fileID: 2873914443771310323}
   coolDown: 10
   sonarPingDuration: 3
@@ -417,7 +417,6 @@ GameObject:
   m_Component:
   - component: {fileID: 3753478763613754629}
   - component: {fileID: 2208007397593910218}
-  - component: {fileID: 1607790547873827682}
   m_Layer: 3
   m_Name: RotatePoint
   m_TagString: Untagged
