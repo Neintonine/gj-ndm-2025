@@ -476,7 +476,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 445404579}
-  enemy: {fileID: 787249237}
   spawnPoint: {fileID: 244742154}
   speed: 1
   distanceBetween: 4
@@ -527,7 +526,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 445404579}
-  enemy: {fileID: 806477718}
   spawnPoint: {fileID: 1336245543}
   speed: 1
   distanceBetween: 4
@@ -1105,7 +1103,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 47f4c977b04c7624c91cd5fc5a2cbeb4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  stunDuration: 1
+  stunDuration: 5
   ubootController: {fileID: 445404600}
 --- !u!1 &1969458915
 GameObject:

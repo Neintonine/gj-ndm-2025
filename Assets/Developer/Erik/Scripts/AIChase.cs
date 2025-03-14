@@ -4,7 +4,6 @@ using UnityEngine.UIElements;
 public class AIChase : MonoBehaviour
 {
     public GameObject player;
-    public GameObject enemy;
     public GameObject spawnPoint;
     public float speed;
     public float distanceBetween;
@@ -15,7 +14,7 @@ public class AIChase : MonoBehaviour
 
     void Start()
     {
-       enemy.transform.position = spawnPoint.transform.position;
+       transform.position = spawnPoint.transform.position;
     }
    
     void Update()
