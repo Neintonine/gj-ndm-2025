@@ -82,5 +82,10 @@ public class UbootController : MonoBehaviour
 
             Destroy(collision.gameObject);
         }
+
+        if (collision.gameObject.tag == "Enemy")
+        {
+            health.Takedamage(20);
+        }
     }
 }
