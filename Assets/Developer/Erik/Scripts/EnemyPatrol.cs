@@ -7,6 +7,8 @@ public class EnemyPatrol : MonoBehaviour
     private Rigidbody2D rb;
     private Transform currentPoint;
     public float speed;
+
+    public Health health;
     
     void Start()
     {
@@ -36,6 +38,13 @@ public class EnemyPatrol : MonoBehaviour
         }
     }
 
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.CompareTag("Laser"))
+        {
+            health.Takedamage(10);
+        }
+    }
 
     private void OnDrawGizmos()
     {

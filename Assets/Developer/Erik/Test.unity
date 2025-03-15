@@ -390,11 +390,11 @@ GameObject:
   - component: {fileID: 787249239}
   - component: {fileID: 787249238}
   - component: {fileID: 787249243}
-  - component: {fileID: 787249240}
-  - component: {fileID: 787249242}
+  - component: {fileID: 787249244}
+  - component: {fileID: 787249245}
   m_Layer: 0
   m_Name: EnemyChasing
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -469,36 +469,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &787249240
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 787249237}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5794bd219963c98429e180271ab71ea4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player: {fileID: 445404579}
-  spawnPoint: {fileID: 244742154}
-  speed: 1
-  distanceBetween: 4
---- !u!114 &787249242
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 787249237}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 96becd4646116fb4ea7e0b251f5ae1fb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player: {fileID: 445404602}
-  knockbackPower: 150
 --- !u!61 &787249243
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -545,6 +515,37 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 0.5}
   m_EdgeRadius: 0
+--- !u!114 &787249244
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 787249237}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5794bd219963c98429e180271ab71ea4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 445404579}
+  spawnPoint: {fileID: 244742154}
+  speed: 1
+  detectionDistance: 5
+  attackRange: 2
+  health: {fileID: 787249245}
+--- !u!114 &787249245
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 787249237}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f55df96c809955e478cf14ccda3ed443, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 20
 --- !u!1 &806477718
 GameObject:
   m_ObjectHideFlags: 0
@@ -556,30 +557,15 @@ GameObject:
   - component: {fileID: 806477721}
   - component: {fileID: 806477720}
   - component: {fileID: 806477723}
-  - component: {fileID: 806477719}
+  - component: {fileID: 806477724}
+  - component: {fileID: 806477725}
   m_Layer: 0
   m_Name: EnemyChasing (1)
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &806477719
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 806477718}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5794bd219963c98429e180271ab71ea4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player: {fileID: 445404579}
-  spawnPoint: {fileID: 1336245543}
-  speed: 1
-  distanceBetween: 4
 --- !u!212 &806477720
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -696,6 +682,37 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 0.5}
   m_EdgeRadius: 0
+--- !u!114 &806477724
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 806477718}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5794bd219963c98429e180271ab71ea4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 445404579}
+  spawnPoint: {fileID: 1336245543}
+  speed: 1
+  detectionDistance: 5
+  attackRange: 2
+  health: {fileID: 806477725}
+--- !u!114 &806477725
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 806477718}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f55df96c809955e478cf14ccda3ed443, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 20
 --- !u!1001 &1044063476
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -711,6 +728,14 @@ PrefabInstance:
     - target: {fileID: 984015390649010722, guid: dbff0fe3f9ea43044a456e96b7dd0134, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1213198685471020791, guid: dbff0fe3f9ea43044a456e96b7dd0134, type: 3}
+      propertyPath: currentDrone
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 1213198685471020791, guid: dbff0fe3f9ea43044a456e96b7dd0134, type: 3}
+      propertyPath: cameraController
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 2208007397593910218, guid: dbff0fe3f9ea43044a456e96b7dd0134, type: 3}
       propertyPath: camera
@@ -1036,9 +1061,10 @@ GameObject:
   - component: {fileID: 1859526918}
   - component: {fileID: 1859526919}
   - component: {fileID: 1859526920}
+  - component: {fileID: 1859526921}
   m_Layer: 0
   m_Name: EnemyPatrolling
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1077,7 +1103,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: -0.0019091368, y: 0.15054496}
+  m_Offset: {x: -0.0019090772, y: 0.13908696}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.28866667}
@@ -1087,7 +1113,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 1.0835605, y: 0.9561564}
+  m_Size: {x: 1.1637658, y: 1.0478199}
   m_EdgeRadius: 0
 --- !u!212 &1859526916
 SpriteRenderer:
@@ -1174,6 +1200,7 @@ MonoBehaviour:
   pointA: {fileID: 1346395707}
   pointB: {fileID: 1464221009}
   speed: 2
+  health: {fileID: 1859526921}
 --- !u!114 &1859526919
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1201,7 +1228,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 445404602}
-  knockbackPower: 150
+  knockbackPower: 200
+--- !u!114 &1859526921
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1859526913}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f55df96c809955e478cf14ccda3ed443, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 20
 --- !u!1 &1969458915
 GameObject:
   m_ObjectHideFlags: 0
@@ -1283,7 +1323,7 @@ Transform:
   m_GameObject: {fileID: 1969458915}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.52465785, y: 0.28600416, z: 0}
+  m_LocalPosition: {x: -0.56, y: 0.27, z: 0}
   m_LocalScale: {x: 130.30052, y: 130.30052, z: 130.30052}
   m_ConstrainProportionsScale: 0
   m_Children: []

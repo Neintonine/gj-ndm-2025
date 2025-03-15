@@ -3,11 +3,11 @@ using UnityEngine;
 public class KnockbackAttack : MonoBehaviour
 {
     public Rigidbody2D player;
-    public float knockbackPower = 150;
+    public float knockbackPower = 200;
 
     void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.CompareTag("Player"))
+        if (collision.gameObject.tag == "Player")
         {
             Knockback();
         }
