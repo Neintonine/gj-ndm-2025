@@ -8,7 +8,7 @@ public class StunAttack : MonoBehaviour
     public float stunDuration;
     public UbootController ubootController;
    
-    void OnTriggerEnter2D(Collider2D collision)
+    void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.tag == "Player")
         {           

@@ -81,11 +81,6 @@ public class UbootController : MonoBehaviour
             bombAttack.Pickupbomb();
 
             Destroy(collision.gameObject);
-        }
-
-        if (collision.gameObject.tag == "Enemy")
-        {
-            health.Takedamage(20);
-        }
+        }        
     }
 }

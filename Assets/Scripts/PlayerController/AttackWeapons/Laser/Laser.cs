@@ -16,16 +16,9 @@ public class Laser : MonoBehaviour
 
 
     //Destruction of Laser after Collision
-    private void OnTriggerEnter2D(Collider2D collision)
+    private void OnCollisionEnter2D(Collision2D collision)
     {
         Destroy(gameObject);
-
-        //if (collision.gameObject.tag == "Enemy")
-        //{
-        //    //Animation left!
-        //    Destroy(collision.gameObject);
-        //}
-
     }
 
 }

@@ -4,6 +4,7 @@ using UnityEngine;
 public class Health : MonoBehaviour
 {
     public int health;
+    public event Action OnDeath;
 
     public void Takedamage(int damage)
     {
@@ -11,7 +12,7 @@ public class Health : MonoBehaviour
 
         if (health <= 0)
         {
-            Destroy(gameObject);
+            this.OnDeath?.Invoke();
         }
     }
 }

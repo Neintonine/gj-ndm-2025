@@ -14,7 +14,13 @@ public class AIChase : MonoBehaviour
 
     void Start()
     {
+        health.OnDeath += Health_OnDeath;
         transform.position = spawnPoint.transform.position;
+    }
+
+    private void Health_OnDeath()
+    {
+        Destroy(gameObject);
     }
 
     void Update()
@@ -40,7 +46,7 @@ public class AIChase : MonoBehaviour
         //    speed = 1;
     }
 
-    void OnTriggerEnter2D(Collider2D collision)
+    void OnCollisionEnter2D(Collision2D collision)
     {
         if(collision.gameObject.CompareTag("Laser"))
         {
