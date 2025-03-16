@@ -175,4 +175,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b4f3c7aa3f38d1c4eab19c0c0230d180, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bombAttack: {fileID: 0}
+  bombExplosion: {fileID: 3463101640023375779, guid: 66afb11d55fdf854bbb99f2fb7849d08, type: 3}
