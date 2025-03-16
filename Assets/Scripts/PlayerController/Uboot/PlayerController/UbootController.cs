@@ -2,6 +2,7 @@ using System;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.Rendering;
+using UnityEngine.SceneManagement;
 
 public class UbootController : MonoBehaviour
 {
@@ -17,6 +18,16 @@ public class UbootController : MonoBehaviour
 
     public float speed = 5f;
     public bool stun;
+
+    private void Health_OnDeath()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+    }
+
+    private void Start()
+    {
+        health.OnDeath += Health_OnDeath;    
+    }
 
     void Update()
     {

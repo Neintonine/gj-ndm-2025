@@ -12,6 +12,7 @@ public class EnemyPatrol : MonoBehaviour
     
     void Start()
     {
+        health.OnDeath += Health_OnDeath;
         rb = GetComponent<Rigidbody2D>();
         currentPoint = pointB.transform;
         transform.position = pointA.transform.position;
@@ -38,12 +39,16 @@ public class EnemyPatrol : MonoBehaviour
         }
     }
 
-    private void OnTriggerEnter2D(Collider2D collision)
+    private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.CompareTag("Laser"))
         {
             health.Takedamage(10);
         }
+    }
+    private void Health_OnDeath()
+    {
+        Destroy(gameObject);
     }
 
     private void OnDrawGizmos()

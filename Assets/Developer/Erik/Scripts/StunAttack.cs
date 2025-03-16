@@ -12,13 +12,13 @@ public class StunAttack : MonoBehaviour
     {
         if (collision.gameObject.tag == "Player")
         {           
-            this.ubootController.Disablefunctions();
             StartCoroutine(stunTimer(stunDuration));           
         }
     }
 
     IEnumerator stunTimer(float stunDuration)
     {
+        ubootController.Disablefunctions();
         yield return new WaitForSeconds(stunDuration);
         ubootController.Enablefuctions();
     }

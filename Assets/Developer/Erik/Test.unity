@@ -379,6 +379,17 @@ Rigidbody2D:
   m_CorrespondingSourceObject: {fileID: 1409932290533394971, guid: dbff0fe3f9ea43044a456e96b7dd0134, type: 3}
   m_PrefabInstance: {fileID: 1044063476}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &445404604 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 422697960363930929, guid: dbff0fe3f9ea43044a456e96b7dd0134, type: 3}
+  m_PrefabInstance: {fileID: 1044063476}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 445404579}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f55df96c809955e478cf14ccda3ed443, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &787249237
 GameObject:
   m_ObjectHideFlags: 0
@@ -392,8 +403,9 @@ GameObject:
   - component: {fileID: 787249243}
   - component: {fileID: 787249246}
   - component: {fileID: 787249244}
-  - component: {fileID: 787249245}
   - component: {fileID: 787249247}
+  - component: {fileID: 787249245}
+  - component: {fileID: 787249248}
   m_Layer: 0
   m_Name: EnemyChasing
   m_TagString: Enemy
@@ -533,8 +545,10 @@ MonoBehaviour:
   spawnPoint: {fileID: 244742154}
   speed: 1
   detectionDistance: 5
-  attackRange: 2
   health: {fileID: 787249245}
+  stopDistance: 2
+  attackcooldown: 1
+  stopChasing: 0
 --- !u!114 &787249245
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -589,6 +603,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 445404602}
   knockbackPower: 3
+--- !u!114 &787249248
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 787249237}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4eae0549749ea14438b1ab5784e24461, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: {fileID: 445404604}
+  damage: 20
 --- !u!1 &806477718
 GameObject:
   m_ObjectHideFlags: 0
@@ -602,7 +630,9 @@ GameObject:
   - component: {fileID: 806477723}
   - component: {fileID: 806477726}
   - component: {fileID: 806477724}
+  - component: {fileID: 806477727}
   - component: {fileID: 806477725}
+  - component: {fileID: 806477728}
   m_Layer: 0
   m_Name: EnemyChasing (1)
   m_TagString: Enemy
@@ -742,8 +772,10 @@ MonoBehaviour:
   spawnPoint: {fileID: 1336245543}
   speed: 1
   detectionDistance: 5
-  attackRange: 2
   health: {fileID: 806477725}
+  stopDistance: 2
+  attackcooldown: 1
+  stopChasing: 0
 --- !u!114 &806477725
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -784,6 +816,34 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
+--- !u!114 &806477727
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 806477718}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 96becd4646116fb4ea7e0b251f5ae1fb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 445404602}
+  knockbackPower: 3
+--- !u!114 &806477728
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 806477718}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4eae0549749ea14438b1ab5784e24461, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: {fileID: 445404604}
+  damage: 20
 --- !u!1001 &1044063476
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1134,6 +1194,7 @@ GameObject:
   - component: {fileID: 1859526919}
   - component: {fileID: 1859526920}
   - component: {fileID: 1859526921}
+  - component: {fileID: 1859526923}
   m_Layer: 0
   m_Name: EnemyPatrolling
   m_TagString: Enemy
@@ -1341,6 +1402,20 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
+--- !u!114 &1859526923
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1859526913}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4eae0549749ea14438b1ab5784e24461, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: {fileID: 445404604}
+  damage: 10
 --- !u!1 &1969458915
 GameObject:
   m_ObjectHideFlags: 0
