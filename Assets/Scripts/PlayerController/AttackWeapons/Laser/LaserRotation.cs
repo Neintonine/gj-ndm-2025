@@ -10,6 +10,8 @@ public class LaserRotation : MonoBehaviour
     private Transform laserTransform;
     private CapsuleCollider2D ubootCollider;
 
+
+
     private void Awake()
     {
         laserTransform = gameObject.transform.GetChild(0).GetComponent<Transform>();
@@ -26,8 +28,8 @@ public class LaserRotation : MonoBehaviour
 
         Vector2 direction = (targetRotation - (Vector3)closestPoint).normalized;
 
-
         float angleR = Mathf.Atan2(direction.y, direction.x);
+
         float angleD = Mathf.Rad2Deg * angleR - initalAngle;
 
         transform.rotation = Quaternion.Euler(0,0,angleD);
