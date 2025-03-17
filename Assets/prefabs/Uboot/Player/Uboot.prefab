@@ -479,13 +479,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7232182288669405291}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: 0.7283701, w: -0.6851839}
-  m_LocalPosition: {x: 0.4000028, y: 0, z: -5}
+  m_LocalRotation: {x: 0, y: 0, z: -0.7071068, w: 0.7071068}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1.0307312, y: 1.4574817, z: 1.4202499}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 6643164058161445297}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 180}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -90}
 --- !u!114 &5439631076906534481
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -502,8 +502,8 @@ MonoBehaviour:
   m_LightType: 3
   m_BlendStyleIndex: 0
   m_FalloffIntensity: 1
-  m_Color: {r: 1, g: 1, b: 0.16862746, a: 0.4117647}
-  m_Intensity: 13.62
+  m_Color: {r: 1, g: 1, b: 0.16862746, a: 1}
+  m_Intensity: 200
   m_LightVolumeIntensity: 1
   m_LightVolumeEnabled: 0
   m_ApplyToSortingLayers: 00000000
@@ -525,7 +525,7 @@ MonoBehaviour:
     m_Center: {x: 0, y: -0.00000011920929, z: 0}
     m_Extent: {x: 0.9985302, y: 0.99853027, z: 0}
   m_PointLightInnerAngle: 39.375
-  m_PointLightOuterAngle: 39.375
+  m_PointLightOuterAngle: 256.01154
   m_PointLightInnerRadius: 0
   m_PointLightOuterRadius: 8.54
   m_ShapeLightParametricSides: 5
@@ -595,7 +595,7 @@ Transform:
   m_GameObject: {fileID: 8079863712150829808}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: -0, z: 0.7071068, w: -0.7071068}
-  m_LocalPosition: {x: -0, y: -2.023, z: 2}
+  m_LocalPosition: {x: -0, y: -2.023, z: 0}
   m_LocalScale: {x: 0.15, y: 0.1275, z: 0.2}
   m_ConstrainProportionsScale: 0
   m_Children:
