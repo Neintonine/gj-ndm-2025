@@ -9,9 +9,17 @@ namespace Developer.Michel.Scripts.UI
         [Header("Play game")]
         [SerializeField] private SceneAsset playSceneAsset;
         
+        [Header("Options")]
+        [SerializeField] private Animation optionsAnimation;
+        
         public void PlayGame()
         {
             SceneManager.LoadScene(this.playSceneAsset.name, LoadSceneMode.Single);
+        }
+
+        public void OpenOptions()
+        {
+            optionsAnimation.Play();
         }
 
         public void QuitGame()
