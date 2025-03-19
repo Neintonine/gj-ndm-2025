@@ -37,14 +37,14 @@ public class DivingBell : MonoBehaviour
         if (other.gameObject.CompareTag("Player") && isAttached)
         {
 
-            AttachToUboot(other.transform);
+            AttachToUboot(other.gameObject.GetComponent<Rigidbody2D>());
 
         }
 
     }
 
 
-    void AttachChain(Rigidbody2D droneRb)
+    void AttachChain(Transform droneRb)
     {
 
         isAttached = true;
