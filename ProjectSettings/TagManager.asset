@@ -11,6 +11,7 @@ TagManager:
   - Rotate
   - lasertransform
   - Laser
+  - Drone
   layers:
   - Default
   - TransparentFX
