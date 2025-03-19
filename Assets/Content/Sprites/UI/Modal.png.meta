@@ -1,0 +1,858 @@
+fileFormatVersion: 2
+guid: ded81484f8333a25384e449238d85b6c
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -7689620988575540452
+    second: Modal_0
+  - first:
+      213: -1637150830978152862
+    second: Modal_1
+  - first:
+      213: 3644811821872637312
+    second: Modal_2
+  - first:
+      213: 358784096131168427
+    second: Modal_3
+  - first:
+      213: -3756316211277456452
+    second: Modal_4
+  - first:
+      213: -3627989325983387140
+    second: Modal_5
+  - first:
+      213: -5265604615772573208
+    second: Modal_6
+  - first:
+      213: -5832727983156698015
+    second: Modal_7
+  - first:
+      213: -2019455171630851255
+    second: Modal_8
+  - first:
+      213: -7972453013274908281
+    second: Modal_9
+  - first:
+      213: 5139925399954912059
+    second: Modal_10
+  - first:
+      213: -4894556278203368225
+    second: Modal_11
+  - first:
+      213: 1257442564259899238
+    second: Modal_12
+  - first:
+      213: 7813119615926407091
+    second: Modal_13
+  - first:
+      213: 36562658132851477
+    second: Modal_14
+  - first:
+      213: -7424242839221116732
+    second: Modal_15
+  - first:
+      213: -7860312871000529742
+    second: Modal_16
+  - first:
+      213: 3777774703516546399
+    second: Modal_17
+  - first:
+      213: 8309627548638905600
+    second: Modal_18
+  - first:
+      213: -8276591724317705519
+    second: Modal_19
+  - first:
+      213: -7196497457378223108
+    second: Modal_20
+  - first:
+      213: -7988728840124481836
+    second: Modal_21
+  - first:
+      213: 1055894814950243405
+    second: Modal_22
+  - first:
+      213: 7853478755822864929
+    second: Modal_23
+  - first:
+      213: 5408675086433051018
+    second: Modal_24
+  - first:
+      213: 5775444493099178455
+    second: Modal_25
+  - first:
+      213: -642361687894425440
+    second: Modal_26
+  - first:
+      213: -7443370200377533734
+    second: Modal_27
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 178, y: 0, z: 176, w: 839}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Modal_0
+      rect:
+        serializedVersion: 2
+        x: 250
+        y: 3169
+        width: 47
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c1b1196c37af84590800000000000000
+      internalID: -7689620988575540452
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Modal_1
+      rect:
+        serializedVersion: 2
+        x: 331
+        y: 3207
+        width: 47
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 266cfc34efba749e0800000000000000
+      internalID: -1637150830978152862
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Modal_2
+      rect:
+        serializedVersion: 2
+        x: 483
+        y: 3185
+        width: 38
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 085ecdb7a09f49230800000000000000
+      internalID: 3644811821872637312
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Modal_3
+      rect:
+        serializedVersion: 2
+        x: 577
+        y: 3215
+        width: 39
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ba835f80c38aaf400800000000000000
+      internalID: 358784096131168427
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Modal_4
+      rect:
+        serializedVersion: 2
+        x: 142
+        y: 3135
+        width: 68
+        height: 67
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cbb14c2ce42eedbc0800000000000000
+      internalID: -3756316211277456452
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Modal_5
+      rect:
+        serializedVersion: 2
+        x: 309
+        y: 3131
+        width: 47
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cf1f9df0eeac6adc0800000000000000
+      internalID: -3627989325983387140
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Modal_6
+      rect:
+        serializedVersion: 2
+        x: 402
+        y: 3114
+        width: 70
+        height: 68
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8e1f7351080dce6b0800000000000000
+      internalID: -5265604615772573208
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Modal_7
+      rect:
+        serializedVersion: 2
+        x: 530
+        y: 3156
+        width: 39
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 164e67c6dccfd0fa0800000000000000
+      internalID: -5832727983156698015
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Modal_8
+      rect:
+        serializedVersion: 2
+        x: 613
+        y: 3135
+        width: 69
+        height: 67
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 94b1e1f883479f3e0800000000000000
+      internalID: -2019455171630851255
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Modal_9
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 3050
+        width: 92
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 789a14b69382c5190800000000000000
+      internalID: -7972453013274908281
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Modal_10
+      rect:
+        serializedVersion: 2
+        x: 489
+        y: 3072
+        width: 52
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b33f1543beea45740800000000000000
+      internalID: 5139925399954912059
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Modal_11
+      rect:
+        serializedVersion: 2
+        x: 577
+        y: 3072
+        width: 51
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fdcb7885ffa031cb0800000000000000
+      internalID: -4894556278203368225
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Modal_12
+      rect:
+        serializedVersion: 2
+        x: 412
+        y: 3032
+        width: 38
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 667ea289955537110800000000000000
+      internalID: 1257442564259899238
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Modal_13
+      rect:
+        serializedVersion: 2
+        x: 153
+        y: 2915
+        width: 119
+        height: 113
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3bf0eee15e6cd6c60800000000000000
+      internalID: 7813119615926407091
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Modal_14
+      rect:
+        serializedVersion: 2
+        x: 341
+        y: 2961
+        width: 62
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 51b7d0a3b85e18000800000000000000
+      internalID: 36562658132851477
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Modal_15
+      rect:
+        serializedVersion: 2
+        x: 453
+        y: 2980
+        width: 39
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4c0ecf9197ac7f890800000000000000
+      internalID: -7424242839221116732
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Modal_16
+      rect:
+        serializedVersion: 2
+        x: 501
+        y: 2990
+        width: 38
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2b4259ce61f8ae290800000000000000
+      internalID: -7860312871000529742
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Modal_17
+      rect:
+        serializedVersion: 2
+        x: 626
+        y: 2915
+        width: 119
+        height: 113
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f557f8cc31a5d6430800000000000000
+      internalID: 3777774703516546399
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Modal_18
+      rect:
+        serializedVersion: 2
+        x: 294
+        y: 2813
+        width: 133
+        height: 126
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0050c6caa3ab15370800000000000000
+      internalID: 8309627548638905600
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Modal_19
+      rect:
+        serializedVersion: 2
+        x: 430
+        y: 2875
+        width: 71
+        height: 67
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1dafa119da3a32d80800000000000000
+      internalID: -8276591724317705519
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Modal_20
+      rect:
+        serializedVersion: 2
+        x: 524
+        y: 2914
+        width: 62
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cfb18f1f0b7e02c90800000000000000
+      internalID: -7196497457378223108
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Modal_21
+      rect:
+        serializedVersion: 2
+        x: 235
+        y: 2749
+        width: 62
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4de367d2275522190800000000000000
+      internalID: -7988728840124481836
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Modal_22
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 2801
+        width: 25
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d4c39456dba47ae00800000000000000
+      internalID: 1055894814950243405
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Modal_23
+      rect:
+        serializedVersion: 2
+        x: 463
+        y: 2736
+        width: 165
+        height: 156
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 12a06e3a1592dfc60800000000000000
+      internalID: 7853478755822864929
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Modal_24
+      rect:
+        serializedVersion: 2
+        x: 118
+        y: 2639
+        width: 120
+        height: 114
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a81e850b5597f0b40800000000000000
+      internalID: 5408675086433051018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Modal_25
+      rect:
+        serializedVersion: 2
+        x: 294
+        y: 2553
+        width: 227
+        height: 215
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7d99927ba20862050800000000000000
+      internalID: 5775444493099178455
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Modal_26
+      rect:
+        serializedVersion: 2
+        x: 591
+        y: 2639
+        width: 119
+        height: 114
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0a08bbfb27fd517f0800000000000000
+      internalID: -642361687894425440
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Modal_27
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 827
+        height: 2612
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: adad4ca4d36d3b890800000000000000
+      internalID: -7443370200377533734
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 1537655665
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Modal_0: -7689620988575540452
+      Modal_1: -1637150830978152862
+      Modal_10: 5139925399954912059
+      Modal_11: -4894556278203368225
+      Modal_12: 1257442564259899238
+      Modal_13: 7813119615926407091
+      Modal_14: 36562658132851477
+      Modal_15: -7424242839221116732
+      Modal_16: -7860312871000529742
+      Modal_17: 3777774703516546399
+      Modal_18: 8309627548638905600
+      Modal_19: -8276591724317705519
+      Modal_2: 3644811821872637312
+      Modal_20: -7196497457378223108
+      Modal_21: -7988728840124481836
+      Modal_22: 1055894814950243405
+      Modal_23: 7853478755822864929
+      Modal_24: 5408675086433051018
+      Modal_25: 5775444493099178455
+      Modal_26: -642361687894425440
+      Modal_27: -7443370200377533734
+      Modal_3: 358784096131168427
+      Modal_4: -3756316211277456452
+      Modal_5: -3627989325983387140
+      Modal_6: -5265604615772573208
+      Modal_7: -5832727983156698015
+      Modal_8: -2019455171630851255
+      Modal_9: -7972453013274908281
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
