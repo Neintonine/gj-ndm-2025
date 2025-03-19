@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      DivingBell_0: 3350431718818193760
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
