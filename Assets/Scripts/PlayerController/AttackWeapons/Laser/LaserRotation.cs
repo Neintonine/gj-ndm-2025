@@ -8,7 +8,7 @@ public class LaserRotation : MonoBehaviour
     [SerializeField] private float initalAngle;
 
     private Transform laserTransform;
-    private CapsuleCollider2D ubootCollider;
+    private Collider2D ubootCollider;
 
 
 
@@ -16,7 +16,8 @@ public class LaserRotation : MonoBehaviour
     {
         laserTransform = gameObject.transform.GetChild(0).GetComponent<Transform>();
 
-        ubootCollider = GameObject.FindGameObjectWithTag("Player").GetComponent<CapsuleCollider2D>();
+        ubootCollider = GameObject.FindGameObjectWithTag("Player").GetComponent<PolygonCollider2D>();
+        camera ??= GameObject.FindWithTag("MainCamera").GetComponentInChildren<Camera>();
     }
 
     public void Update()

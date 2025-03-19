@@ -7,7 +7,7 @@ public class Drone : MonoBehaviour
     public float speed = 8f;
     public float floatForce = 10f;
     private Vector2 movement;
-    private SpriteRenderer spriteRenderer;
+    [SerializeField] private SpriteRenderer spriteRenderer;
     public UbootController UbootControllerDrone;
 
     public BombAttack BombAttackDrone;
@@ -18,7 +18,6 @@ public class Drone : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
-        spriteRenderer = GetComponent<SpriteRenderer>();
     }
 
     // Update is called once per frame

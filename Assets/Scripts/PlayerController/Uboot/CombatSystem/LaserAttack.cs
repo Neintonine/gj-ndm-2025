@@ -27,7 +27,7 @@ public class LaserAttack : MonoBehaviour
             {
                 Instantiate(laser, laserTransform.transform.position, laserSpawn.transform.rotation);
                 timer = coolDown;
-            }    
+            }
             
     }
 

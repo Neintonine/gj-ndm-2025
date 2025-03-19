@@ -41,7 +41,7 @@ public class UbootController : MonoBehaviour
         }
 
         //Laser Attack left click mouse
-        if (Input.GetMouseButtonDown(0))
+        if (Input.GetMouseButton(0))
         {
             laserAttack.Attack();
         }
