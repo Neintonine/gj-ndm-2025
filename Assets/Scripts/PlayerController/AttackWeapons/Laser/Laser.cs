@@ -9,7 +9,7 @@ public class Laser : MonoBehaviour
     private void Update()
     {
 
-        transform.Translate(Vector2.down * speedLaser * Time.deltaTime);
+        transform.Translate(Vector2.right * speedLaser * Time.deltaTime);
 
         Destroy(gameObject, 8);
     }

@@ -19,10 +19,23 @@ public class LaserRotation : MonoBehaviour
         ubootCollider = GameObject.FindGameObjectWithTag("Player").GetComponent<PolygonCollider2D>();
         camera ??= GameObject.FindWithTag("MainCamera").GetComponentInChildren<Camera>();
     }
-
+    
     public void Update()
     {
+        this.DirectLookAtCursor();
+    }
 
+    private void DirectLookAtCursor()
+    {
+        this.laserTransform.position = transform.position;
+        
+        Vector3 targetPosition = camera.ScreenToWorldPoint(Input.mousePosition);
+        Vector2 direction = (targetPosition - laserTransform.position).normalized;
+        this.transform.right = direction;
+    }
+
+    private void AttachedToCollider()
+    {
         Vector3 targetRotation = camera.ScreenToWorldPoint(Input.mousePosition);
 
         Vector2 closestPoint = ubootCollider.ClosestPoint(targetRotation);
@@ -36,7 +49,6 @@ public class LaserRotation : MonoBehaviour
         transform.rotation = Quaternion.Euler(0,0,angleD);
 
         laserTransform.position = closestPoint;
-
     }
-
+    
 }
