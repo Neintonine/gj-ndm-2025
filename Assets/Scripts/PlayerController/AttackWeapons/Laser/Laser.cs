@@ -18,6 +18,11 @@ public class Laser : MonoBehaviour
     //Destruction of Laser after Collision
     private void OnCollisionEnter2D(Collision2D collision)
     {
+        if (collision.gameObject.CompareTag("Player"))
+        {
+            return;
+        }
+        
         Destroy(gameObject);
     }
 
