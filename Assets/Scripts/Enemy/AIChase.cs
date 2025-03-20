@@ -83,4 +83,10 @@ public class AIChase : MonoBehaviour
 
     }
 
+    void OnDrawGizmos()
+    {
+        Gizmos.color = Color.red;
+        Gizmos.DrawWireSphere(transform.position, detectionDistance);
+    }
+
 }

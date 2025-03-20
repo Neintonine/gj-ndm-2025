@@ -29,6 +29,18 @@ PrefabInstance:
       value: 
       objectReference: {fileID: -7695883086778401650, guid: 569b2fa12fc474f2ab6306f5a986c03a, type: 3}
     - target: {fileID: 4604438021765402652, guid: d5ca2941a8f055fbe980594737f9f77f, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.10788222
+      objectReference: {fileID: 0}
+    - target: {fileID: 4604438021765402652, guid: d5ca2941a8f055fbe980594737f9f77f, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.10788222
+      objectReference: {fileID: 0}
+    - target: {fileID: 4604438021765402652, guid: d5ca2941a8f055fbe980594737f9f77f, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.10788222
+      objectReference: {fileID: 0}
+    - target: {fileID: 4604438021765402652, guid: d5ca2941a8f055fbe980594737f9f77f, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
       objectReference: {fileID: 0}
@@ -72,8 +84,97 @@ PrefabInstance:
       propertyPath: m_Name
       value: AalEnemy
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 254574526636737259, guid: d5ca2941a8f055fbe980594737f9f77f, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 8722214046228419395, guid: d5ca2941a8f055fbe980594737f9f77f, type: 3}
+      insertIndex: 2
+      addedObject: {fileID: 8121902977779434841}
   m_SourcePrefab: {fileID: 100100000, guid: d5ca2941a8f055fbe980594737f9f77f, type: 3}
+--- !u!1 &514926374902466029 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8722214046228419395, guid: d5ca2941a8f055fbe980594737f9f77f, type: 3}
+  m_PrefabInstance: {fileID: 9092457281342445230}
+  m_PrefabAsset: {fileID: 0}
+--- !u!60 &8121902977779434841
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 514926374902466029}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 22.570574, y: 11.627057}
+      - {x: 19.473337, y: 12.431693}
+      - {x: 17.292841, y: 11.902271}
+      - {x: 10.461406, y: 13.154254}
+      - {x: -0.9980006, y: 5.6652465}
+      - {x: 2.1279342, y: 0.91133606}
+      - {x: -0.90672415, y: -1.3312664}
+      - {x: -6.751077, y: 2.0157907}
+      - {x: -5.2794685, y: 7.3232117}
+      - {x: -9.248692, y: 13.115599}
+      - {x: -14.673255, y: 16.129059}
+      - {x: -18.767746, y: 16.69936}
+      - {x: -22.442068, y: 16.24466}
+      - {x: -26.082783, y: 11.118795}
+      - {x: -28.182043, y: 4.58494}
+      - {x: -31.072596, y: 1.6966982}
+      - {x: -27.696867, y: 2.690559}
+      - {x: -25.715601, y: 5.1730523}
+      - {x: -19.777567, y: 11.504569}
+      - {x: -17.57312, y: 10.970043}
+      - {x: -13.74985, y: 8.225953}
+      - {x: -15.787838, y: -0.07004213}
+      - {x: -11.093446, y: -6.2949824}
+      - {x: -7.727444, y: -11.775672}
+      - {x: -1.4043045, y: -15.265262}
+      - {x: 4.377397, y: -16.901524}
+      - {x: 12.047484, y: -13.049097}
+      - {x: 17.203617, y: -7.182591}
+      - {x: 15.683667, y: 0.08666682}
+      - {x: 17.74426, y: 1.1859219}
+      - {x: 26.967588, y: 0.8891809}
+      - {x: 31.28582, y: 3.2114382}
+      - {x: 29.678177, y: 6.382498}
+  m_UseDelaunayMesh: 0
