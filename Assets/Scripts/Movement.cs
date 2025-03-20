@@ -24,14 +24,13 @@ public class Drone : MonoBehaviour
     void Update()
     {
         float input = Input.GetAxisRaw("Horizontal");
-        movement.x = input * speed * Time.deltaTime;
-        transform.Translate(movement);
-
+        this.rb.AddForceX(input * speed);
+        
         spriteRenderer.flipX = input < 0f; 
 
         if (Input.GetKeyDown(KeyCode.Space))
         { 
-            rb.linearVelocity = Vector2.up * floatForce;
+            rb.linearVelocityY = floatForce;
         }
         if (Input.GetKeyDown(KeyCode.E))
         {

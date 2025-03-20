@@ -458,7 +458,7 @@ SpriteShapeRenderer:
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
+  m_DynamicOccludee: 0
   m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
@@ -1812,8 +1812,8 @@ Transform:
   m_GameObject: {fileID: 7809885014144046377}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0.0712276, w: 0.9974601}
-  m_LocalPosition: {x: 13.298562, y: 6.45, z: 0}
-  m_LocalScale: {x: 0.48, y: 2.7501137, z: 1}
+  m_LocalPosition: {x: 13.24, y: 6.1, z: 0}
+  m_LocalScale: {x: 0.48, y: 2.5823784, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 6850478954422099253}
