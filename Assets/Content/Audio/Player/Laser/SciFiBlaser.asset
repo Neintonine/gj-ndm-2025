@@ -1,0 +1,71 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1233149941 &-5198355795085833648
+AudioContainerElement:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Sci Fi Blaster 7_{-5198355795085833648}
+  m_AudioClip: {fileID: 8300000, guid: 3bbbf4f4e598b3dcc96db6ead96db345, type: 3}
+  m_Volume: 0
+  m_Enabled: 1
+--- !u!1233149941 &-1955719267395803781
+AudioContainerElement:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Sci Fi Blaster 6_{-1955719267395803781}
+  m_AudioClip: {fileID: 8300000, guid: 2c064ef19c588d64095fb9cb37721937, type: 3}
+  m_Volume: 0
+  m_Enabled: 1
+--- !u!1233149941 &242039944137055026
+AudioContainerElement:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Sci Fi Blaster 10_{242039944137055026}
+  m_AudioClip: {fileID: 8300000, guid: 35188e084732e78a389d77440f082cbd, type: 3}
+  m_Volume: 0
+  m_Enabled: 1
+--- !u!1307931743 &6418180475301049370
+AudioRandomContainer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: SciFiBlaser
+  m_Volume: 0
+  m_Pitch: 0
+  m_AutomaticTriggerTime: 0
+  m_LoopCount: 1
+  m_VolumeRandomizationRange: {x: 0, y: 0}
+  m_PitchRandomizationRange: {x: 0, y: 0}
+  m_AutomaticTriggerTimeRandomizationRange: {x: 0, y: 0}
+  m_LoopCountRandomizationRange: {x: 0, y: 0}
+  m_Elements:
+  - {fileID: 8423253737792481443}
+  - {fileID: 242039944137055026}
+  - {fileID: -1955719267395803781}
+  - {fileID: -5198355795085833648}
+  m_AvoidRepeatingLast: 1
+  m_PlaybackMode: 2
+  m_TriggerMode: 0
+  m_AutomaticTriggerMode: 1
+  m_LoopMode: 2
+  m_VolumeRandomizationEnabled: 0
+  m_PitchRandomizationEnabled: 0
+  m_AutomaticTriggerTimeRandomizationEnabled: 0
+  m_LoopCountRandomizationEnabled: 0
+--- !u!1233149941 &8423253737792481443
+AudioContainerElement:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Sci Fi Blaster 9_{8423253737792481443}
+  m_AudioClip: {fileID: 8300000, guid: a8d6b966e796bf77bae84d7827f21dd0, type: 3}
+  m_Volume: 0
+  m_Enabled: 1

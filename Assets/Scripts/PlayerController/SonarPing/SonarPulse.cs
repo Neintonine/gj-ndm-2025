@@ -25,6 +25,9 @@ public sealed class SonarPulse : MonoBehaviour
     [SerializeField] private LineRenderer _linePrefab;
     [SerializeField] private int _lineResolution;
     [FormerlySerializedAs("_playerMask")] [SerializeField] private LayerMask _lineRaycastMask;
+    
+    [Header("Audio")]
+    [SerializeField] private AudioSource _hitAudioSource;
 
     private float _distancePerSecond;
     private float _timer = 0;
@@ -40,7 +43,7 @@ public sealed class SonarPulse : MonoBehaviour
         this._circle.transform.localScale = new Vector3(this._pulseDistance * 2, this._pulseDistance * 2, 1);
         this._circleMaterial = this._circle.material;
         
-        Destroy(this.gameObject, this._pulseDuration);
+        Destroy(this.gameObject, this._pulseDuration + 5);
     }
 
     private void Update()
@@ -107,6 +110,8 @@ public sealed class SonarPulse : MonoBehaviour
         LineRenderer lineRenderer = Instantiate(this._linePrefab, Vector3.zero, Quaternion.identity);
         lineRenderer.positionCount = points.Count;
         lineRenderer.SetPositions(points.Select(point => new Vector3(point.x, point.y, 0f)).ToArray());
+
+        Instantiate(this._hitAudioSource, this.transform.position, Quaternion.identity).Play();
         
         return lineRenderer;
     }

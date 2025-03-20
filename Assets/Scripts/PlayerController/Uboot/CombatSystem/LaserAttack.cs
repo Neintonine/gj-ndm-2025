@@ -5,6 +5,7 @@ public class LaserAttack : MonoBehaviour
     [SerializeField] private GameObject laserTransform;
     [SerializeField] private GameObject laser;
     [SerializeField] private GameObject laserSpawn;
+    [SerializeField] private AudioSource audioSource;
 
 
     private float timer;
@@ -27,6 +28,7 @@ public class LaserAttack : MonoBehaviour
             {
                 Instantiate(laser, laserTransform.transform.position, laserSpawn.transform.rotation);
                 timer = coolDown;
+                audioSource.Play();
             }
             
     }
