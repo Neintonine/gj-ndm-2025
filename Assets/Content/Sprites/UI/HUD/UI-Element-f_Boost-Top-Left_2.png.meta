@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      UI-Element-f_Boost-Top-Left_2_0: 2134949006219809615
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

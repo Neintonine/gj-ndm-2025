@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      UI-Element-f_Drone-Top-Right_0: -7910421070280905370
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
