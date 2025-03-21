@@ -217,7 +217,7 @@ SpriteShapeRenderer:
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
+  m_DynamicOccludee: 0
   m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
@@ -484,7 +484,7 @@ SpriteShapeRenderer:
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
+  m_DynamicOccludee: 0
   m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
@@ -838,7 +838,7 @@ SpriteShapeRenderer:
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
+  m_DynamicOccludee: 0
   m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
@@ -1287,7 +1287,7 @@ SpriteShapeRenderer:
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
+  m_DynamicOccludee: 0
   m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
@@ -1475,7 +1475,7 @@ SpriteShapeRenderer:
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
+  m_DynamicOccludee: 0
   m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
@@ -1663,7 +1663,7 @@ SpriteShapeRenderer:
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
+  m_DynamicOccludee: 0
   m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
@@ -2112,7 +2112,7 @@ SpriteShapeRenderer:
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
+  m_DynamicOccludee: 0
   m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
@@ -2300,7 +2300,7 @@ SpriteShapeRenderer:
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
+  m_DynamicOccludee: 0
   m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
@@ -2480,7 +2480,7 @@ SpriteShapeRenderer:
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
+  m_DynamicOccludee: 0
   m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
@@ -2747,7 +2747,7 @@ SpriteShapeRenderer:
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
+  m_DynamicOccludee: 0
   m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
@@ -3054,7 +3054,7 @@ SpriteShapeRenderer:
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
+  m_DynamicOccludee: 0
   m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
@@ -3103,8 +3103,8 @@ SpriteShapeRenderer:
   - {fileID: 21300000, guid: 608e61deb05c54660bebf5a4dd2ee02d, type: 3}
   - {fileID: 21300000, guid: 608e61deb05c54660bebf5a4dd2ee02d, type: 3}
   m_LocalAABB:
-    m_Center: {x: -0.052925587, y: -0.024142623, z: 0}
-    m_Extent: {x: 2.7968197, y: 1.3342005, z: 0}
+    m_Center: {x: -1.6520214, y: 14.217129, z: 0}
+    m_Extent: {x: 4.3959155, y: 15.575472, z: 0}
   m_SpriteSortPoint: 0
 --- !u!114 &6905613010081738172
 MonoBehaviour:
@@ -3121,25 +3121,25 @@ MonoBehaviour:
   m_Spline:
     m_IsOpenEnded: 0
     m_ControlPoints:
-    - position: {x: -2.0313916, y: -0.90242887, z: 0}
-      leftTangent: {x: 0.5359725, y: -0.00048220158, z: 0}
-      rightTangent: {x: -0.53597355, y: 0.00048226118, z: 0}
+    - position: {x: -4.942568, y: -0.7017036, z: 0}
+      leftTangent: {x: 0.5359731, y: -0.00047653913, z: 0}
+      rightTangent: {x: -0.5359745, y: 0.00048834085, z: 0}
       mode: 1
       height: 1
       spriteIndex: 0
       corner: 1
       m_CornerMode: 1
-    - position: {x: -2, y: 1, z: 0}
-      leftTangent: {x: -1.0023332, y: 0.0010559559, z: 0}
-      rightTangent: {x: 1.0023332, y: -0.0010559559, z: -0}
+    - position: {x: -5.335124, y: 29.567972, z: 0}
+      leftTangent: {x: -1.0023332, y: 0.0010547638, z: 0}
+      rightTangent: {x: 1.0023322, y: -0.0010566711, z: 0}
       mode: 1
       height: 1
       spriteIndex: 0
       corner: 1
       m_CornerMode: 1
-    - position: {x: 2, y: 1.0000001, z: 0}
-      leftTangent: {x: -0.9998423, y: 0.1356579, z: 0}
-      rightTangent: {x: 0.17426991, y: -0.023644984, z: 0}
+    - position: {x: 1.7309035, y: 24.752338, z: 0}
+      leftTangent: {x: -0.99984175, y: 0.13565636, z: 0}
+      rightTangent: {x: 0.17427003, y: -0.023645401, z: 0}
       mode: 1
       height: 1
       spriteIndex: 0
@@ -3226,7 +3226,7 @@ SpriteShapeRenderer:
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
+  m_DynamicOccludee: 0
   m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
@@ -3620,7 +3620,7 @@ SpriteShapeRenderer:
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
+  m_DynamicOccludee: 0
   m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
@@ -4205,7 +4205,7 @@ SpriteShapeRenderer:
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
+  m_DynamicOccludee: 0
   m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
@@ -4254,8 +4254,8 @@ SpriteShapeRenderer:
   - {fileID: 21300000, guid: 608e61deb05c54660bebf5a4dd2ee02d, type: 3}
   - {fileID: 21300000, guid: 608e61deb05c54660bebf5a4dd2ee02d, type: 3}
   m_LocalAABB:
-    m_Center: {x: 0.058187485, y: 0.07264745, z: 0}
-    m_Extent: {x: 3.0288105, y: 1.3834805, z: 0}
+    m_Center: {x: -0.05352354, y: -2.8722248, z: 0}
+    m_Extent: {x: 3.319271, y: 4.3283525, z: 0}
   m_SpriteSortPoint: 0
 --- !u!114 &301236245310235128
 MonoBehaviour:
@@ -4272,17 +4272,17 @@ MonoBehaviour:
   m_Spline:
     m_IsOpenEnded: 0
     m_ControlPoints:
-    - position: {x: -2.0865211, y: -0.96743137, z: 0}
-      leftTangent: {x: 0.53596413, y: -0.00048226118, z: 0}
-      rightTangent: {x: -0.39777255, y: 0.00035750866, z: 0}
+    - position: {x: -1.9252772, y: -6.4060597, z: 0}
+      leftTangent: {x: 0.53596437, y: -0.00048208237, z: 0}
+      rightTangent: {x: -0.3977728, y: 0.00035905838, z: 0}
       mode: 1
       height: 1
       spriteIndex: 0
       corner: 1
       m_CornerMode: 1
-    - position: {x: -2.6966097, y: -0.47971845, z: 0}
-      leftTangent: {x: -0.11745429, y: -0.43069, z: 0}
-      rightTangent: {x: 0.094195366, y: 0.3454012, z: 0}
+    - position: {x: -3.1138353, y: -6.829982, z: 0}
+      leftTangent: {x: -0.11745405, y: -0.43069506, z: 0}
+      rightTangent: {x: 0.09419465, y: 0.34539413, z: 0}
       mode: 1
       height: 1
       spriteIndex: 0
@@ -4312,17 +4312,17 @@ MonoBehaviour:
       spriteIndex: 0
       corner: 1
       m_CornerMode: 1
-    - position: {x: 2.7901816, y: -0.7911378, z: 0}
-      leftTangent: {x: -0.112807274, y: 0.25948548, z: 0}
-      rightTangent: {x: 0.13502884, y: -0.31059992, z: 0}
+    - position: {x: 2.9987485, y: -1.3189925, z: 0}
+      leftTangent: {x: -0.11280751, y: 0.25948548, z: 0}
+      rightTangent: {x: 0.1350286, y: -0.31059992, z: 0}
       mode: 1
       height: 1
       spriteIndex: 0
       corner: 1
       m_CornerMode: 1
-    - position: {x: 2.0212998, y: -1.0589247, z: 0}
-      leftTangent: {x: 0.19691682, y: 0.00015282631, z: 0}
-      rightTangent: {x: -0.5439147, y: -0.00042247772, z: 0}
+    - position: {x: 2.3195724, y: -6.4060597, z: 0}
+      leftTangent: {x: 0.19691634, y: 0.00015544891, z: 0}
+      rightTangent: {x: -0.5439142, y: -0.00042057037, z: 0}
       mode: 1
       height: 1
       spriteIndex: 0

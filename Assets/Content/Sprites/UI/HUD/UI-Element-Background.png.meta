@@ -1,16 +1,16 @@
 fileFormatVersion: 2
-guid: d295dc376b6ffacdba352a34c3ff3dbf
+guid: 3f30e33abbf29d0568ece8315ccf8b7c
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 417027462723416290
-    second: UI-Element-f_Bottom-Left-Right_0
+      213: -3031894909443730597
+    second: UI-Element-Background_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
-    sRGBTexture: 0
+    sRGBTexture: 1
     linearTexture: 0
     fadeOut: 0
     borderMipMap: 0
@@ -47,7 +47,7 @@ TextureImporter:
   lightmap: 0
   compressionQuality: 50
   spriteMode: 2
-  spriteExtrude: 0
+  spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
@@ -55,7 +55,7 @@ TextureImporter:
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
-  alphaIsTransparency: 0
+  alphaIsTransparency: 1
   spriteTessellationDetail: -1
   textureType: 8
   textureShape: 1
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: UI-Element-f_Bottom-Left-Right_0
+      name: UI-Element-Background_0
       rect:
         serializedVersion: 2
-        x: 3566
-        y: 1906
-        width: 548
-        height: 509
+        x: 3455
+        y: 1805
+        width: 772
+        height: 711
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 2e03631944499c500800000000000000
-      internalID: 417027462723416290
+      spriteID: b539a4eb4ab8ce5d0800000000000000
+      internalID: -3031894909443730597
       vertices: []
       indices: 
       edges: []
@@ -138,7 +138,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 5e97eb03825dee720800000000000000
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -148,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      UI-Element-f_Bottom-Left-Right_0: 417027462723416290
+      UI-Element-Background_0: -3031894909443730597
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

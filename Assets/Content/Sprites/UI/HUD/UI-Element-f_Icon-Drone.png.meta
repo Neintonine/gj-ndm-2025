@@ -1,16 +1,25 @@
 fileFormatVersion: 2
-guid: d295dc376b6ffacdba352a34c3ff3dbf
+guid: 775848f03da90e63fa7183484cdcdeb4
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 417027462723416290
-    second: UI-Element-f_Bottom-Left-Right_0
+      213: 746768513263063542
+    second: UI-Element-f_Icon-Drone_0
+  - first:
+      213: 6503977296147182998
+    second: UI-Element-f_Icon-Drone_1
+  - first:
+      213: -8631240208347173362
+    second: UI-Element-f_Icon-Drone_2
+  - first:
+      213: 8610837882423191057
+    second: UI-Element-f_Icon-Drone_3
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
-    sRGBTexture: 0
+    sRGBTexture: 1
     linearTexture: 0
     fadeOut: 0
     borderMipMap: 0
@@ -47,15 +56,15 @@ TextureImporter:
   lightmap: 0
   compressionQuality: 50
   spriteMode: 2
-  spriteExtrude: 0
+  spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spritePixelsToUnits: 100
-  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteBorder: {x: 0, y: 1055, z: 1905, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
-  alphaIsTransparency: 0
+  alphaIsTransparency: 1
   spriteTessellationDetail: -1
   textureType: 8
   textureShape: 1
@@ -113,23 +122,23 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: UI-Element-f_Bottom-Left-Right_0
+      name: UI-Element-f_Icon-Drone_0
       rect:
         serializedVersion: 2
-        x: 3566
-        y: 1906
-        width: 548
-        height: 509
+        x: 3659
+        y: 1983
+        width: 382
+        height: 355
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 2e03631944499c500800000000000000
-      internalID: 417027462723416290
+      spriteID: 6f1dd7a910e0d5a00800000000000000
+      internalID: 746768513263063542
       vertices: []
       indices: 
       edges: []
@@ -139,7 +148,7 @@ TextureImporter:
     physicsShape: []
     bones: []
     spriteID: 5e97eb03825dee720800000000000000
-    internalID: 0
+    internalID: 1537655665
     vertices: []
     indices: 
     edges: []
@@ -148,7 +157,10 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      UI-Element-f_Bottom-Left-Right_0: 417027462723416290
+      UI-Element-f_Icon-Drone_0: 746768513263063542
+      UI-Element-f_Icon-Drone_1: 6503977296147182998
+      UI-Element-f_Icon-Drone_2: -8631240208347173362
+      UI-Element-f_Icon-Drone_3: 8610837882423191057
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

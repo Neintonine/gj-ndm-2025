@@ -2335,7 +2335,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a575aedb235945d3a5b7d639446dca6f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playSceneAsset: {fileID: 102900000, guid: c51b40cea291b96438fd058bd17536d0, type: 3}
+  playSceneAsset: {fileID: 102900000, guid: 6d8a714ec3712277e89d2bba87be6e42, type: 3}
   optionsAnimation: {fileID: 2140096620}
 --- !u!1 &1967467394
 GameObject:

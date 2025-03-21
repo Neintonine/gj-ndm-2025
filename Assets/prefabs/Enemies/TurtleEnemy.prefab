@@ -92,21 +92,7 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 8722214046228419395, guid: d5ca2941a8f055fbe980594737f9f77f, type: 3}
       insertIndex: -1
       addedObject: {fileID: 7258600308680620704}
-    - targetCorrespondingSourceObject: {fileID: 8722214046228419395, guid: d5ca2941a8f055fbe980594737f9f77f, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 3059718193325355600}
   m_SourcePrefab: {fileID: 100100000, guid: d5ca2941a8f055fbe980594737f9f77f, type: 3}
---- !u!114 &3471735783991907728 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 2333223000632214737, guid: d5ca2941a8f055fbe980594737f9f77f, type: 3}
-  m_PrefabInstance: {fileID: 1175246779653673281}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7585424953520144898}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f55df96c809955e478cf14ccda3ed443, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &7585424953520144898 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8722214046228419395, guid: d5ca2941a8f055fbe980594737f9f77f, type: 3}
@@ -203,21 +189,3 @@ PolygonCollider2D:
       - {x: 23.66587, y: 1.3561593}
       - {x: 27.96241, y: 0.21587425}
   m_UseDelaunayMesh: 0
---- !u!114 &3059718193325355600
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7585424953520144898}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 65715d846f5c8840092afe3877433ba3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 1
-  detectionDistance: 4
-  health: {fileID: 3471735783991907728}
-  stopDistance: 2
-  attackCooldown: 2
-  stopChasing: 0
