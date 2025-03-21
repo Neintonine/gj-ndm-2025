@@ -1,0 +1,442 @@
+fileFormatVersion: 2
+guid: bfeda699015a39400a5328b49fcd6c0b
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 4942387006936077471
+    second: Foxtrot_Logo_Light_0
+  - first:
+      213: -5794895198639114908
+    second: Foxtrot_Logo_Light_1
+  - first:
+      213: 5323893340886681653
+    second: Foxtrot_Logo_Light_2
+  - first:
+      213: -3113608700494902622
+    second: Foxtrot_Logo_Light_3
+  - first:
+      213: 731938370651995812
+    second: Foxtrot_Logo_Light_4
+  - first:
+      213: 3410242931998717169
+    second: Foxtrot_Logo_Light_5
+  - first:
+      213: -7967520644124143287
+    second: Foxtrot_Logo_Light_6
+  - first:
+      213: -6538165644384302433
+    second: Foxtrot_Logo_Light_7
+  - first:
+      213: -8956041891687594102
+    second: Foxtrot_Logo_Light_8
+  - first:
+      213: -334447761341610302
+    second: Foxtrot_Logo_Light_9
+  - first:
+      213: -6645258930441519718
+    second: Foxtrot_Logo_Light_10
+  - first:
+      213: 2037728326876936377
+    second: Foxtrot_Logo_Light_11
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Foxtrot_Logo_Light_0
+      rect:
+        serializedVersion: 2
+        x: 1047
+        y: 2130
+        width: 567
+        height: 1187
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f945ee20cc2e69440800000000000000
+      internalID: 4942387006936077471
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Foxtrot_Logo_Light_1
+      rect:
+        serializedVersion: 2
+        x: 1298
+        y: 657
+        width: 1724
+        height: 2020
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 465bf7ef485649fa0800000000000000
+      internalID: -5794895198639114908
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Foxtrot_Logo_Light_2
+      rect:
+        serializedVersion: 2
+        x: 1456
+        y: 2656
+        width: 702
+        height: 1588
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5384e9d49c442e940800000000000000
+      internalID: 5323893340886681653
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Foxtrot_Logo_Light_3
+      rect:
+        serializedVersion: 2
+        x: 2162
+        y: 2656
+        width: 702
+        height: 1588
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2aa8f6d226d3ac4d0800000000000000
+      internalID: -3113608700494902622
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Foxtrot_Logo_Light_4
+      rect:
+        serializedVersion: 2
+        x: 2706
+        y: 2130
+        width: 567
+        height: 1187
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4aeb034f11e582a00800000000000000
+      internalID: 731938370651995812
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Foxtrot_Logo_Light_5
+      rect:
+        serializedVersion: 2
+        x: 547
+        y: 35
+        width: 428
+        height: 732
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1f4f19fd0ed935f20800000000000000
+      internalID: 3410242931998717169
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Foxtrot_Logo_Light_6
+      rect:
+        serializedVersion: 2
+        x: 935
+        y: 39
+        width: 456
+        height: 582
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 941936a103ead6190800000000000000
+      internalID: -7967520644124143287
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Foxtrot_Logo_Light_7
+      rect:
+        serializedVersion: 2
+        x: 1373
+        y: 39
+        width: 472
+        height: 580
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f9a8fc3bcf4c345a0800000000000000
+      internalID: -6538165644384302433
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Foxtrot_Logo_Light_8
+      rect:
+        serializedVersion: 2
+        x: 1847
+        y: 39
+        width: 372
+        height: 580
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a878174c95fb5b380800000000000000
+      internalID: -8956041891687594102
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Foxtrot_Logo_Light_9
+      rect:
+        serializedVersion: 2
+        x: 2221
+        y: 39
+        width: 442
+        height: 580
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2c60f45788dcb5bf0800000000000000
+      internalID: -334447761341610302
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Foxtrot_Logo_Light_10
+      rect:
+        serializedVersion: 2
+        x: 2679
+        y: 39
+        width: 456
+        height: 582
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a9d7a8af53c47c3a0800000000000000
+      internalID: -6645258930441519718
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Foxtrot_Logo_Light_11
+      rect:
+        serializedVersion: 2
+        x: 3139
+        y: 39
+        width: 648
+        height: 728
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9b83040fd17774c10800000000000000
+      internalID: 2037728326876936377
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Foxtrot_Logo_Light_0: 4942387006936077471
+      Foxtrot_Logo_Light_1: -5794895198639114908
+      Foxtrot_Logo_Light_10: -6645258930441519718
+      Foxtrot_Logo_Light_11: 2037728326876936377
+      Foxtrot_Logo_Light_2: 5323893340886681653
+      Foxtrot_Logo_Light_3: -3113608700494902622
+      Foxtrot_Logo_Light_4: 731938370651995812
+      Foxtrot_Logo_Light_5: 3410242931998717169
+      Foxtrot_Logo_Light_6: -7967520644124143287
+      Foxtrot_Logo_Light_7: -6538165644384302433
+      Foxtrot_Logo_Light_8: -8956041891687594102
+      Foxtrot_Logo_Light_9: -334447761341610302
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
