@@ -13,6 +13,13 @@ public class BombAttack : MonoBehaviour
 
     private float timer;
 
+    public event Action<int> BombInventoryChanged;
+
+    private void Start()
+    {
+        BombInventoryChanged?.Invoke(this.bombInventory);
+    }
+
 
     //Timer for bomb
     private void Update()
@@ -33,6 +40,7 @@ public class BombAttack : MonoBehaviour
             timer = coolDown;
 
             bombInventory -= 1;
+            BombInventoryChanged?.Invoke(this.bombInventory);
         }
         
     }
@@ -40,6 +48,7 @@ public class BombAttack : MonoBehaviour
     public void Pickupbomb()
     {
         bombInventory += 1;
+        BombInventoryChanged?.Invoke(this.bombInventory);
     }
 
 }

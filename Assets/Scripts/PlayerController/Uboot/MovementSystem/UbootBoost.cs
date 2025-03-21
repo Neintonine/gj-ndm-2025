@@ -9,15 +9,22 @@ public class UbootBoost : MonoBehaviour
 
     private float timer;
     public float cooldown = 10;
-    private float boostInventory = 3;
+    private int boostInventory = 3;
 
     private float speed;
     private float speedBoost;
+    
+    public event Action<int> BoostInventoryChanged;
 
     private void Awake()
     {
         speed = ubootController.speed;
         speedBoost = speed * 2;
+    }
+
+    private void Start()
+    {
+        BoostInventoryChanged?.Invoke(boostInventory);
     }
 
 
@@ -40,6 +47,7 @@ public class UbootBoost : MonoBehaviour
             ubootController.speed = speedBoost;
 
             boostInventory -= 1; 
+            BoostInventoryChanged?.Invoke(boostInventory);
 
             Invoke("StopBoost", 5);            
         }
