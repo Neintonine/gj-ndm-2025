@@ -14,10 +14,9 @@ public class Bomb : MonoBehaviour
         Destroy(gameObject);
 
         //Animation left!
-        if (collision.gameObject.tag == "wall" || collision.gameObject.tag == "Enemy")
+        if (collision.gameObject.tag == "wall")
         {
             Bombexplosion();
-            Destroy(collision.gameObject);
         }        
     }
 
