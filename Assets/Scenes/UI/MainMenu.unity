@@ -6008,7 +6008,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Andres
+  m_text: Andres Pedroza
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 161643c053ed61585b3dba2dd0529d5c, type: 2}
   m_sharedMaterial: {fileID: 400491713915631743, guid: 161643c053ed61585b3dba2dd0529d5c, type: 2}
