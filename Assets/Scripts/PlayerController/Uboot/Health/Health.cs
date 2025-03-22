@@ -8,6 +8,7 @@ public class Health : MonoBehaviour
     public int health;
     public event Action OnDeath;
     public event Action<int> OnHealthChange;
+    public event Action OnDamage;
 
     private void Awake()
     {
@@ -18,6 +19,10 @@ public class Health : MonoBehaviour
     {
         health -= damage;
         OnHealthChange?.Invoke(this.health);
+        if (damage > 0)
+        {
+            OnDamage?.Invoke();
+        }
 
         if (health <= 0)
         {

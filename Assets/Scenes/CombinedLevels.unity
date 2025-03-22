@@ -606,22 +606,6 @@ PrefabInstance:
       propertyPath: camera
       value: 
       objectReference: {fileID: 1836713694}
-    - target: {fileID: 3753478763613754629, guid: dbff0fe3f9ea43044a456e96b7dd0134, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7427002633751769323, guid: dbff0fe3f9ea43044a456e96b7dd0134, type: 3}
-      propertyPath: m_Intensity
-      value: 0.4
-      objectReference: {fileID: 0}
-    - target: {fileID: 7427002633751769323, guid: dbff0fe3f9ea43044a456e96b7dd0134, type: 3}
-      propertyPath: m_LightOrder
-      value: 11
-      objectReference: {fileID: 0}
-    - target: {fileID: 8560983820893895405, guid: dbff0fe3f9ea43044a456e96b7dd0134, type: 3}
-      propertyPath: speed
-      value: 10
-      objectReference: {fileID: 0}
     - target: {fileID: 8617835959266895927, guid: dbff0fe3f9ea43044a456e96b7dd0134, type: 3}
       propertyPath: m_LocalPosition.x
       value: 10.28

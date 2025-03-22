@@ -13,7 +13,6 @@ public sealed class StuckTurtle : MonoBehaviour
         }
         
         float hitDirection = Vector2.Dot(transform.up, other.contacts[0].normal);
-        Debug.Log(hitDirection);
         
         if (hitDirection < 0.9)
         {
