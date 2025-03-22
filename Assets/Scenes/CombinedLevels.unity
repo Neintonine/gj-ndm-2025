@@ -130,6 +130,11 @@ GameObject:
   - component: {fileID: 44238841}
   - component: {fileID: 44238840}
   - component: {fileID: 44238839}
+  - component: {fileID: 44238842}
+  - component: {fileID: 44238843}
+  - component: {fileID: 44238845}
+  - component: {fileID: 44238844}
+  - component: {fileID: 44238846}
   m_Layer: 0
   m_Name: Stuck Turtle
   m_TagString: Untagged
@@ -288,13 +293,96 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 44238838}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.198082, y: -0.98018545, z: -0.000000112162766, w: 0.00000055502426}
+  m_LocalRotation: {x: 0.198082, y: -0.9801854, z: -0.0000001121628, w: 0.0000005550243}
   m_LocalPosition: {x: -3.83, y: -52.08, z: 0}
   m_LocalScale: {x: 0.2443489, y: 0.2443489, z: 0.2443489}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: -180, z: -22.85}
+--- !u!111 &44238842
+Animation:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 44238838}
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Animation: {fileID: 0}
+  m_Animations:
+  - {fileID: 7400000, guid: 158a167b20490095ea39b1f535ffa3d4, type: 2}
+  m_WrapMode: 0
+  m_PlayAutomatically: 1
+  m_AnimatePhysics: 0
+  m_UpdateMode: 0
+  m_CullingType: 0
+--- !u!114 &44238843
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 44238838}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2e9112f0b1e84bc1877c8a57a49661ef, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _animation: {fileID: 44238842}
+--- !u!114 &44238844
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 44238838}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d870dc1ca8d8a19facfd6921ecf095f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  knockbackPower: 3
+--- !u!114 &44238845
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 44238838}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2f46229cc2cea0103bdfa19a7ce69d33, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 60
+--- !u!50 &44238846
+Rigidbody2D:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 44238838}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 1
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDamping: 0
+  m_AngularDamping: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &330963747
 GameObject:
   m_ObjectHideFlags: 0
@@ -536,11 +624,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8617835959266895927, guid: dbff0fe3f9ea43044a456e96b7dd0134, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1.01
+      value: 10.28
       objectReference: {fileID: 0}
     - target: {fileID: 8617835959266895927, guid: dbff0fe3f9ea43044a456e96b7dd0134, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.45
+      value: -44.73
       objectReference: {fileID: 0}
     - target: {fileID: 8617835959266895927, guid: dbff0fe3f9ea43044a456e96b7dd0134, type: 3}
       propertyPath: m_LocalPosition.z
