@@ -58,7 +58,7 @@ public class UbootController : MonoBehaviour
         }
 
         //Speedboost G
-        if (Input.GetKeyDown(KeyCode.G))
+        if (Input.GetKeyDown(KeyCode.LeftShift))
         {
             ubootBoost.Boost();
         }
