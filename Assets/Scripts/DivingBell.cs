@@ -8,103 +8,41 @@ public class DivingBell : MonoBehaviour
     private bool isAtUboot = false;
 
     public GameObject chainPrefab;
-    public GameObject ChainTop;
-    public GameObject ChainDown;
-    public Transform attachPoint;
-
-    void Start()
-    {
-
-
-
-
-
-    }
-
+    private GameObject ChainTop;
+    private GameObject ChainDown;
+    
     private void OnCollisionEnter2D(Collision2D other)
     {
-
-
-
-        if (other.gameObject.tag == "Drone" && !isAttached)
-
+        if (other.gameObject.CompareTag("Player") && !isAttached)
         {
-
-            AttachChain(other.transform);
-
+            this.AttachChain(other.gameObject.GetComponent<Rigidbody2D>());
         }
-
-        if (other.gameObject.CompareTag("Player") && isAttached)
-        {
-
-            AttachToUboot(other.gameObject.GetComponent<Rigidbody2D>());
-
-        }
-
     }
 
 
-    void AttachChain(Transform droneRb)
+    void AttachChain(Rigidbody2D target)
     {
 
         isAttached = true;
 
+        GameObject chainInstance = Instantiate(chainPrefab, transform.position, Quaternion.identity);
+        this.ChainTop = chainInstance.transform.GetChild(0).gameObject;
+        this.ChainDown = chainInstance.transform.GetChild(chainInstance.transform.childCount - 1).gameObject;
+        
+        this.ChainTop.GetComponent<HingeJoint2D>().connectedBody = target;
+        
+        this.transform.SetParent(this.ChainDown.transform);
+        this.transform.localPosition = Vector3.zero;
 
-
-        ChainTop = Instantiate(chainPrefab, attachPoint.position, Quaternion.identity);
-
-
-
-        HingeJoint2D droneJoint = droneRb.gameObject.AddComponent<HingeJoint2D>();
-
-        droneJoint.connectedBody = ChainTop.GetComponent<Rigidbody2D>();
-
-
-
-        HingeJoint2D belljoint = gameObject.AddComponent<HingeJoint2D>();
-
-        belljoint.connectedBody = ChainDown.GetComponent<Rigidbody2D>();
-
-    }
-
-
-
-    void AttachToUboot(Rigidbody2D ubootRb)
-
-    {
-
-        isAtUboot = true;
-
-
-
-        HingeJoint2D droneJoint = ChainTop.GetComponent<HingeJoint2D>();
-
-
-
-        if (droneJoint != null)
-
+        HingeJoint2D joint = this.gameObject.AddComponent<HingeJoint2D>();
+        joint.connectedBody = this.ChainDown.GetComponent<Rigidbody2D>();
+        joint.useLimits = true;
+        joint.limits = new JointAngleLimits2D
         {
-
-            Destroy(droneJoint);
-
-        }
-
-
-
-        HingeJoint2D ubootJoint = ChainTop.AddComponent<HingeJoint2D>();
-
-        ubootJoint.connectedBody = ubootRb;
-
-
-
-
-
-
-
+            min = 0,
+            max = 180,
+        };
     }
-
-
-
 }
 
 

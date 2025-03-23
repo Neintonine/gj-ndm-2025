@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5604980354726431071}
   - component: {fileID: 8201380168936549181}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Drone
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -97,7 +97,7 @@ GameObject:
   m_Component:
   - component: {fileID: 9032338977087899480}
   - component: {fileID: 7136206563192371176}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Light 2D
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -183,7 +183,7 @@ GameObject:
   - component: {fileID: 5049767572302749630}
   - component: {fileID: 7877604546513342305}
   - component: {fileID: 7393130987452602292}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Drone
   m_TagString: Drone
   m_Icon: {fileID: 0}
