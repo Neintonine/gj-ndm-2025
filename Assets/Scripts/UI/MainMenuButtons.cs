@@ -1,3 +1,4 @@
+using System.Threading.Tasks;
 using DG.Tweening;
 using UnityEditor;
 using UnityEngine;
@@ -11,6 +12,7 @@ namespace Developer.Michel.Scripts.UI
         
         [Header("Play game")]
         [SerializeField] private SceneAsset playSceneAsset;
+        [SerializeField] private UIFader fader;
         
         [Header("Options")]
         [SerializeField] private Transform _optionsScreen;
@@ -20,6 +22,12 @@ namespace Developer.Michel.Scripts.UI
         
         public void PlayGame()
         {
+            this._playGame();
+        }
+
+        private async Task _playGame()
+        {
+            await fader.FadeOut(0.5f);
             SceneManager.LoadScene(this.playSceneAsset.name, LoadSceneMode.Single);
         }
 
