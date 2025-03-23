@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 
 public class UbootController : MonoBehaviour
 {
-    
+
     public BombAttack bombAttack;
     public UbootMovement ubootMovement;
     public LaserAttack laserAttack;
@@ -26,7 +26,7 @@ public class UbootController : MonoBehaviour
 
     private void Start()
     {
-        health.OnDeath += Health_OnDeath;    
+        health.OnDeath += Health_OnDeath;
     }
 
     void Update()
@@ -73,7 +73,7 @@ public class UbootController : MonoBehaviour
     {
         this.enabled = false;
 
-        this.laserRotation.enabled = false;        
+        this.laserRotation.enabled = false;
     }
 
     //Enable all Functions of Uboot
@@ -82,16 +82,5 @@ public class UbootController : MonoBehaviour
         this.enabled = true;
 
         this.laserRotation.enabled = true;
-    }
-
-
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        if (collision.gameObject.tag == "Bomb")
-        {
-            bombAttack.Pickupbomb();
-
-            Destroy(collision.gameObject);
-        }        
     }
 }

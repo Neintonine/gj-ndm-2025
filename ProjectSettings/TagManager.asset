@@ -12,6 +12,7 @@ TagManager:
   - lasertransform
   - Laser
   - Drone
+  - DivingBell
   layers:
   - Default
   - TransparentFX

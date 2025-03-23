@@ -10,13 +10,33 @@ public class DivingBell : MonoBehaviour
     public GameObject chainPrefab;
     private GameObject ChainTop;
     private GameObject ChainDown;
+    [SerializeField] private Boss boss;
+    [SerializeField] private GameObject turtle;
     
     private void OnCollisionEnter2D(Collision2D other)
     {
         if (other.gameObject.CompareTag("Player") && !isAttached)
         {
             this.AttachChain(other.gameObject.GetComponent<Rigidbody2D>());
+            
+            this.FreeWay();
+            this.StartBossFight();
         }
+    }
+
+    private void StartBossFight()
+    {
+        this.boss.enabled = true;
+    }
+
+    private void FreeWay()
+    {
+        foreach (GameObject o in GameObject.FindGameObjectsWithTag("wall"))
+        {
+            o.SetActive(false);
+        }
+        
+        this.turtle.gameObject.SetActive(false);
     }
 
 
@@ -28,8 +48,9 @@ public class DivingBell : MonoBehaviour
         GameObject chainInstance = Instantiate(chainPrefab, transform.position, Quaternion.identity);
         this.ChainTop = chainInstance.transform.GetChild(0).gameObject;
         this.ChainDown = chainInstance.transform.GetChild(chainInstance.transform.childCount - 1).gameObject;
-        
-        this.ChainTop.GetComponent<HingeJoint2D>().connectedBody = target;
+
+        HingeJoint2D topJoint = this.ChainTop.GetComponent<HingeJoint2D>();
+        topJoint.connectedBody = target;
         
         this.transform.SetParent(this.ChainDown.transform);
         this.transform.localPosition = Vector3.zero;

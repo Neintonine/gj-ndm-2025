@@ -142,7 +142,7 @@ Rigidbody2D:
   m_Mass: 0.0001
   m_LinearDamping: 10
   m_AngularDamping: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 0.1
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -150,9 +150,9 @@ Rigidbody2D:
   m_ExcludeLayers:
     serializedVersion: 2
     m_Bits: 8
-  m_Interpolate: 0
+  m_Interpolate: 1
   m_SleepingMode: 1
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
   m_Constraints: 0
 --- !u!233 &222004375399857507
 HingeJoint2D:
@@ -172,7 +172,7 @@ HingeJoint2D:
   m_Anchor: {x: -0.000000102558914, y: 0}
   m_ConnectedAnchor: {x: 0, y: -1.0192307}
   m_UseConnectedAnchor: 1
-  m_UseMotor: 1
+  m_UseMotor: 0
   m_Motor:
     m_MotorSpeed: 1
     m_MaximumMotorForce: 10
@@ -360,7 +360,7 @@ Rigidbody2D:
   m_Mass: 0.0001
   m_LinearDamping: 10
   m_AngularDamping: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 0.1
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -368,9 +368,9 @@ Rigidbody2D:
   m_ExcludeLayers:
     serializedVersion: 2
     m_Bits: 8
-  m_Interpolate: 0
+  m_Interpolate: 1
   m_SleepingMode: 1
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
   m_Constraints: 0
 --- !u!233 &2739054433173665640
 HingeJoint2D:
@@ -390,7 +390,7 @@ HingeJoint2D:
   m_Anchor: {x: -0.000000102558914, y: 0}
   m_ConnectedAnchor: {x: 0, y: -1.0538464}
   m_UseConnectedAnchor: 1
-  m_UseMotor: 1
+  m_UseMotor: 0
   m_Motor:
     m_MotorSpeed: 1
     m_MaximumMotorForce: 10
@@ -540,7 +540,7 @@ Rigidbody2D:
   m_Mass: 0.0001
   m_LinearDamping: 10
   m_AngularDamping: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 0.1
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -548,9 +548,9 @@ Rigidbody2D:
   m_ExcludeLayers:
     serializedVersion: 2
     m_Bits: 8
-  m_Interpolate: 0
+  m_Interpolate: 1
   m_SleepingMode: 1
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
   m_Constraints: 0
 --- !u!233 &1555893845471644950
 HingeJoint2D:
@@ -570,7 +570,7 @@ HingeJoint2D:
   m_Anchor: {x: -0.000000102558914, y: 0}
   m_ConnectedAnchor: {x: 0, y: 0.143}
   m_UseConnectedAnchor: 1
-  m_UseMotor: 1
+  m_UseMotor: 0
   m_Motor:
     m_MotorSpeed: 1
     m_MaximumMotorForce: 10
@@ -626,7 +626,7 @@ Rigidbody2D:
   m_Mass: 0.0001
   m_LinearDamping: 0
   m_AngularDamping: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 0.1
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -634,9 +634,9 @@ Rigidbody2D:
   m_ExcludeLayers:
     serializedVersion: 2
     m_Bits: 8
-  m_Interpolate: 0
+  m_Interpolate: 1
   m_SleepingMode: 1
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
   m_Constraints: 0
 --- !u!233 &8396343524266326601
 HingeJoint2D:
@@ -656,7 +656,7 @@ HingeJoint2D:
   m_Anchor: {x: 0.00025856495, y: 0.13859439}
   m_ConnectedAnchor: {x: 1.0022585, y: 1.5400817}
   m_UseConnectedAnchor: 1
-  m_UseMotor: 1
+  m_UseMotor: 0
   m_Motor:
     m_MotorSpeed: 1
     m_MaximumMotorForce: 10000
@@ -806,7 +806,7 @@ Rigidbody2D:
   m_Mass: 0.0001
   m_LinearDamping: 10
   m_AngularDamping: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 0.1
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -814,9 +814,9 @@ Rigidbody2D:
   m_ExcludeLayers:
     serializedVersion: 2
     m_Bits: 8
-  m_Interpolate: 0
+  m_Interpolate: 1
   m_SleepingMode: 1
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
   m_Constraints: 0
 --- !u!233 &7099659269854834680
 HingeJoint2D:
@@ -836,7 +836,7 @@ HingeJoint2D:
   m_Anchor: {x: -0.000000102558914, y: 0}
   m_ConnectedAnchor: {x: 0, y: -1.0269232}
   m_UseConnectedAnchor: 1
-  m_UseMotor: 1
+  m_UseMotor: 0
   m_Motor:
     m_MotorSpeed: 1
     m_MaximumMotorForce: 10
@@ -986,7 +986,7 @@ Rigidbody2D:
   m_Mass: 0.0001
   m_LinearDamping: 10
   m_AngularDamping: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 0.1
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -994,9 +994,9 @@ Rigidbody2D:
   m_ExcludeLayers:
     serializedVersion: 2
     m_Bits: 8
-  m_Interpolate: 0
+  m_Interpolate: 1
   m_SleepingMode: 1
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
   m_Constraints: 0
 --- !u!233 &7586989811601583070
 HingeJoint2D:
@@ -1016,7 +1016,7 @@ HingeJoint2D:
   m_Anchor: {x: -0.000000102558914, y: 0}
   m_ConnectedAnchor: {x: 0, y: -0.9884617}
   m_UseConnectedAnchor: 1
-  m_UseMotor: 1
+  m_UseMotor: 0
   m_Motor:
     m_MotorSpeed: 1
     m_MaximumMotorForce: 10
@@ -1166,7 +1166,7 @@ Rigidbody2D:
   m_Mass: 0.0001
   m_LinearDamping: 10
   m_AngularDamping: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 0.1
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -1174,9 +1174,9 @@ Rigidbody2D:
   m_ExcludeLayers:
     serializedVersion: 2
     m_Bits: 8
-  m_Interpolate: 0
+  m_Interpolate: 1
   m_SleepingMode: 1
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
   m_Constraints: 0
 --- !u!233 &4096148886194553934
 HingeJoint2D:
@@ -1196,7 +1196,7 @@ HingeJoint2D:
   m_Anchor: {x: -0.000000102558914, y: 0}
   m_ConnectedAnchor: {x: 0, y: -1.0461537}
   m_UseConnectedAnchor: 1
-  m_UseMotor: 1
+  m_UseMotor: 0
   m_Motor:
     m_MotorSpeed: 1
     m_MaximumMotorForce: 10

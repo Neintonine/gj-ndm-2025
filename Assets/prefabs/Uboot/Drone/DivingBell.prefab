@@ -217,7 +217,7 @@ GameObject:
   - component: {fileID: 5598325411224365568}
   m_Layer: 0
   m_Name: DivingBell
-  m_TagString: Untagged
+  m_TagString: DivingBell
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -325,4 +325,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   chainPrefab: {fileID: 5427632000668316620, guid: 01166f725d68f5d47b7d6205780b556f, type: 3}
-  attachPoint: {fileID: 7829226583030734377}
+  boss: {fileID: 0}
+  turtle: {fileID: 0}
