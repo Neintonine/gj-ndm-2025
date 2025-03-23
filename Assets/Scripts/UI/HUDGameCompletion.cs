@@ -12,7 +12,12 @@ public sealed class HUDGameCompletion : MonoBehaviour
         this.transform.DOLocalMove(Vector3.zero, 0.5f);
     }
 
-    public async Task ShowMainMenu()
+    public void ShowMainMenu()
+    {
+        this.showMainMenu();
+    }
+
+    private async Task showMainMenu()
     {
         await this._fader.FadeOut(0.5f);
         SceneManager.LoadScene("MainMenu");
