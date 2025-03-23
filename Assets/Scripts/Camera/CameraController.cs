@@ -15,6 +15,7 @@ public class CameraController : MonoBehaviour
     {
         _followingTransform = Uboot.transform;
         instance = this;
+        transform.position = new Vector3(this._followingTransform.position.x, this._followingTransform.position.y, -20);
     }
 
     private void Update()

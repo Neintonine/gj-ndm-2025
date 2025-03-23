@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 public class DivingBell : MonoBehaviour
@@ -25,6 +26,7 @@ public class DivingBell : MonoBehaviour
 
     private void StartBossFight()
     {
+        this.boss.gameObject.SetActive(true);
         this.boss.enabled = true;
     }
 

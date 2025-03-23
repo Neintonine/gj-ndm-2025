@@ -12,12 +12,14 @@ public sealed class Target : MonoBehaviour
             return;
         }
 
-        if (!other.GetComponent<UbootController>().hasDivingBell)
+        UbootController controller = other.GetComponent<UbootController>();
+        
+        if (!controller.hasDivingBell)
         {
             return;
         }
         
         this.hudInstance.ShowModal();
-        
+        controller.Disablefunctions();
     }
 }

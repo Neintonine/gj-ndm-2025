@@ -760,13 +760,17 @@ PrefabInstance:
       propertyPath: speed
       value: 20
       objectReference: {fileID: 0}
+    - target: {fileID: 8560983820893895405, guid: dbff0fe3f9ea43044a456e96b7dd0134, type: 3}
+      propertyPath: hasDivingBell
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8617835959266895927, guid: dbff0fe3f9ea43044a456e96b7dd0134, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -20.8
+      value: -18.6
       objectReference: {fileID: 0}
     - target: {fileID: 8617835959266895927, guid: dbff0fe3f9ea43044a456e96b7dd0134, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 5
+      value: -86.7
       objectReference: {fileID: 0}
     - target: {fileID: 8617835959266895927, guid: dbff0fe3f9ea43044a456e96b7dd0134, type: 3}
       propertyPath: m_LocalPosition.z
@@ -868,7 +872,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!60 &612471046
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -1340,7 +1344,7 @@ Transform:
   m_GameObject: {fileID: 612471045}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0.70710707, w: 0.70710653}
-  m_LocalPosition: {x: -11.94, y: -137.59, z: 0}
+  m_LocalPosition: {x: -11.9, y: -114, z: 0}
   m_LocalScale: {x: 0.452, y: 0.452, z: 0.452}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1363,6 +1367,7 @@ MonoBehaviour:
   _playerTransform: {fileID: 503267377}
   _maxHeight: -20
   _speed: 1
+  _hitPlayerSpawn: {fileID: 2075764365}
 --- !u!1001 &705884341
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1595,7 +1600,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 768845973}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 073797afb82c5a1438f328866b10b3f0, type: 3}
   m_Name: 
@@ -2523,14 +2528,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 246134069901659551, guid: d0509a037a9734415882a1578c8747be, type: 3}
-      propertyPath: m_SortingOrder
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 361962017504491283, guid: d0509a037a9734415882a1578c8747be, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 7.700001
-      objectReference: {fileID: 0}
     - target: {fileID: 1576243323855274190, guid: d0509a037a9734415882a1578c8747be, type: 3}
       propertyPath: m_LocalScale.x
       value: 1
@@ -2579,45 +2576,9 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3501039449170736025, guid: d0509a037a9734415882a1578c8747be, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 10.600006
-      objectReference: {fileID: 0}
-    - target: {fileID: 3765069504015941547, guid: d0509a037a9734415882a1578c8747be, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 8.949997
-      objectReference: {fileID: 0}
-    - target: {fileID: 3765069504015941547, guid: d0509a037a9734415882a1578c8747be, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 13.050003
-      objectReference: {fileID: 0}
     - target: {fileID: 4718566183195384483, guid: d0509a037a9734415882a1578c8747be, type: 3}
       propertyPath: m_Name
       value: Player Camera
-      objectReference: {fileID: 0}
-    - target: {fileID: 5461604056893736436, guid: d0509a037a9734415882a1578c8747be, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 8.949997
-      objectReference: {fileID: 0}
-    - target: {fileID: 5461604056893736436, guid: d0509a037a9734415882a1578c8747be, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 13.050003
-      objectReference: {fileID: 0}
-    - target: {fileID: 6710921297214957216, guid: d0509a037a9734415882a1578c8747be, type: 3}
-      propertyPath: m_text
-      value: \u243A
-      objectReference: {fileID: 0}
-    - target: {fileID: 8135649437365546291, guid: d0509a037a9734415882a1578c8747be, type: 3}
-      propertyPath: m_text
-      value: \uFF32
-      objectReference: {fileID: 0}
-    - target: {fileID: 8223333766540407184, guid: d0509a037a9734415882a1578c8747be, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 8223333766540407184, guid: d0509a037a9734415882a1578c8747be, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 9064218954833469481, guid: d0509a037a9734415882a1578c8747be, type: 3}
       propertyPath: Uboot
@@ -2974,7 +2935,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1958183778}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 073797afb82c5a1438f328866b10b3f0, type: 3}
   m_Name: 
@@ -3126,6 +3087,37 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hudInstance: {fileID: 1769977947}
+--- !u!1 &2075764364
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2075764365}
+  m_Layer: 0
+  m_Name: Boss Player Spawn
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2075764365
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2075764364}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -17.88, y: -87.38, z: -0.08925487}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2146087485
 GameObject:
   m_ObjectHideFlags: 0
@@ -3150,7 +3142,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2146087485}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 073797afb82c5a1438f328866b10b3f0, type: 3}
   m_Name: 
@@ -3291,3 +3283,4 @@ SceneRoots:
   - {fileID: 1845743362}
   - {fileID: 65536413}
   - {fileID: 146896167}
+  - {fileID: 2075764365}
