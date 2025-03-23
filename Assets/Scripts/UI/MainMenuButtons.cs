@@ -11,7 +11,6 @@ namespace Developer.Michel.Scripts.UI
         [SerializeField] private Transform _hudParent;
         
         [Header("Play game")]
-        [SerializeField] private SceneAsset playSceneAsset;
         [SerializeField] private UIFader fader;
         
         [Header("Options")]
@@ -28,7 +27,7 @@ namespace Developer.Michel.Scripts.UI
         private async Task _playGame()
         {
             await fader.FadeOut(0.5f);
-            SceneManager.LoadScene(this.playSceneAsset.name, LoadSceneMode.Single);
+            SceneManager.LoadScene("CombinedLevels", LoadSceneMode.Single);
         }
 
         public void OpenOptions()

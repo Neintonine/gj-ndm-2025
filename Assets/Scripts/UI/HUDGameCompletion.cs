@@ -20,6 +20,6 @@ public sealed class HUDGameCompletion : MonoBehaviour
     private async Task showMainMenu()
     {
         await this._fader.FadeOut(0.5f);
-        SceneManager.LoadScene("MainMenu");
+        SceneManager.LoadScene("MainMenu", LoadSceneMode.Single);
     }
 }   

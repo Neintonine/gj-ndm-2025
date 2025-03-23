@@ -2998,7 +2998,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 926953519}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1918091892}
+        m_TargetAssemblyTypeName: Developer.Michel.Scripts.UI.MainMenuButtons, Game
+        m_MethodName: QuitGame
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &926953519
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7631,7 +7643,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _hudParent: {fileID: 812610623}
-  playSceneAsset: {fileID: 102900000, guid: 6d8a714ec3712277e89d2bba87be6e42, type: 3}
   fader: {fileID: 1826913781}
   _optionsScreen: {fileID: 115741100}
   _creditsScreen: {fileID: 1038672498}
