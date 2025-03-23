@@ -18,5 +18,6 @@ public sealed class Target : MonoBehaviour
         }
         
         this.hudInstance.ShowModal();
+        
     }
 }

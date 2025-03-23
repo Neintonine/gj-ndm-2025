@@ -766,7 +766,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8617835959266895927, guid: dbff0fe3f9ea43044a456e96b7dd0134, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 5.2
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 8617835959266895927, guid: dbff0fe3f9ea43044a456e96b7dd0134, type: 3}
       propertyPath: m_LocalPosition.z
@@ -2527,6 +2527,10 @@ PrefabInstance:
       propertyPath: m_SortingOrder
       value: 10
       objectReference: {fileID: 0}
+    - target: {fileID: 361962017504491283, guid: d0509a037a9734415882a1578c8747be, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 7.700001
+      objectReference: {fileID: 0}
     - target: {fileID: 1576243323855274190, guid: d0509a037a9734415882a1578c8747be, type: 3}
       propertyPath: m_LocalScale.x
       value: 1
@@ -2574,6 +2578,10 @@ PrefabInstance:
     - target: {fileID: 1576243323855274190, guid: d0509a037a9734415882a1578c8747be, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3501039449170736025, guid: d0509a037a9734415882a1578c8747be, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 10.600006
       objectReference: {fileID: 0}
     - target: {fileID: 3765069504015941547, guid: d0509a037a9734415882a1578c8747be, type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -2629,6 +2637,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 29b0b9e372650d6498f4dddd05c84061, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1769977947 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2332593247943184348, guid: d0509a037a9734415882a1578c8747be, type: 3}
+  m_PrefabInstance: {fileID: 1517144893}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 85a3485025ee4523a2adacf4bcf04cae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!20 &1836713694 stripped
@@ -3106,6 +3125,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 85a821fafa3e4e01ba4ba95ee03084e8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  hudInstance: {fileID: 1769977947}
 --- !u!1 &2146087485
 GameObject:
   m_ObjectHideFlags: 0

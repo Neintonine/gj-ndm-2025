@@ -197,7 +197,10 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Stiefel_0: 3841434322912654647
+      Stiefel_1: 3711997603828846786
+      Stiefel_2: 5355914638137148284
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
