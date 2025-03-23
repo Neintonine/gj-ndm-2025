@@ -5,7 +5,8 @@ public class Bomb : MonoBehaviour
 {
 
     [SerializeField] private ParticleSystem bombExplosion;
-
+    [SerializeField] private AudioSource audioSource;
+    
     private ParticleSystem currentBombExplosion;
 
     private void Start()
@@ -20,7 +21,8 @@ public class Bomb : MonoBehaviour
         if (collision.gameObject.tag == "wall")
         {
             Bombexplosion();
-            Destroy(gameObject);
+            this.audioSource.Play();
+            Destroy(gameObject, 20);
         }        
     }
 

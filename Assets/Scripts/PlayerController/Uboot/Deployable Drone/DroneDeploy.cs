@@ -10,6 +10,7 @@ public class DroneDeploy : MonoBehaviour
 
     public GameObject currentDrone;
 
+    public AudioSource spawnSound;
 
 
 
@@ -30,7 +31,7 @@ public class DroneDeploy : MonoBehaviour
     //Creation of Drone
     public void Createdrone()
     {
-        
+        spawnSound.Play();
         currentDrone = Instantiate(drone, droneSpawm.transform.position, Quaternion.identity);
         this.cameraController.setFollowingTransform(this.currentDrone.transform);
         currentDrone.GetComponent<Drone>().UbootControllerDrone = ubootController;

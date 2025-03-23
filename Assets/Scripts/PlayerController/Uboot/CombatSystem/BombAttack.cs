@@ -10,6 +10,7 @@ public class BombAttack : MonoBehaviour
     public int bombInventory = 0;    
 
     public float coolDown;
+    public AudioSource throwSound;
 
     private float timer;
 
@@ -41,6 +42,8 @@ public class BombAttack : MonoBehaviour
 
             bombInventory -= 1;
             BombInventoryChanged?.Invoke(this.bombInventory);
+            
+            throwSound.Play();
         }
         
     }
