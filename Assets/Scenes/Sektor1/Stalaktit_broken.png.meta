@@ -1,0 +1,655 @@
+fileFormatVersion: 2
+guid: 12557d303d1e73a4e8c58e9d7b3e7833
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -4724483343330861664
+    second: Stalaktit_broken_0
+  - first:
+      213: -491641960835709219
+    second: Stalaktit_broken_1
+  - first:
+      213: 5552542426114080247
+    second: Stalaktit_broken_2
+  - first:
+      213: 3499891383695618501
+    second: Stalaktit_broken_3
+  - first:
+      213: 7261766071330872219
+    second: Stalaktit_broken_4
+  - first:
+      213: -588876866009771266
+    second: Stalaktit_broken_5
+  - first:
+      213: -5304734474722004873
+    second: Stalaktit_broken_6
+  - first:
+      213: -227431711729161999
+    second: Stalaktit_broken_7
+  - first:
+      213: 1060011106458838304
+    second: Stalaktit_broken_8
+  - first:
+      213: -2730884724515456935
+    second: Stalaktit_broken_9
+  - first:
+      213: -6727432871777539763
+    second: Stalaktit_broken_10
+  - first:
+      213: -3359798459820928740
+    second: Stalaktit_broken_11
+  - first:
+      213: 4279432836753070826
+    second: Stalaktit_broken_12
+  - first:
+      213: 7805070688985655546
+    second: Stalaktit_broken_13
+  - first:
+      213: 1786959948449997641
+    second: Stalaktit_broken_14
+  - first:
+      213: 4045839521389407651
+    second: Stalaktit_broken_15
+  - first:
+      213: -2981673807784067777
+    second: Stalaktit_broken_16
+  - first:
+      213: -4171303205436523641
+    second: Stalaktit_broken_17
+  - first:
+      213: 3213283357454884404
+    second: Stalaktit_broken_18
+  - first:
+      213: -4771683307992707086
+    second: Stalaktit_broken_19
+  - first:
+      213: 921942367937984200
+    second: Stalaktit_broken_20
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Stalaktit_broken_0
+      rect:
+        serializedVersion: 2
+        x: 4385
+        y: 2512
+        width: 35
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0ad938d3e634f6eb0800000000000000
+      internalID: -4724483343330861664
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stalaktit_broken_1
+      rect:
+        serializedVersion: 2
+        x: 4419
+        y: 2459
+        width: 146
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dd606bfcd365d29f0800000000000000
+      internalID: -491641960835709219
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stalaktit_broken_2
+      rect:
+        serializedVersion: 2
+        x: 3803
+        y: 118
+        width: 1195
+        height: 2307
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7fdb0dcfae79e0d40800000000000000
+      internalID: 5552542426114080247
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stalaktit_broken_3
+      rect:
+        serializedVersion: 2
+        x: 3915
+        y: 2263
+        width: 14
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5c1b0a59bac129030800000000000000
+      internalID: 3499891383695618501
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stalaktit_broken_4
+      rect:
+        serializedVersion: 2
+        x: 3780
+        y: 969
+        width: 24
+        height: 151
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b9b19a374c9f6c460800000000000000
+      internalID: 7261766071330872219
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stalaktit_broken_5
+      rect:
+        serializedVersion: 2
+        x: 5891
+        y: 1027
+        width: 22
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ef2da014c93e3d7f0800000000000000
+      internalID: -588876866009771266
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stalaktit_broken_6
+      rect:
+        serializedVersion: 2
+        x: 3807
+        y: 832
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7703d66d91cc166b0800000000000000
+      internalID: -5304734474722004873
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stalaktit_broken_7
+      rect:
+        serializedVersion: 2
+        x: 3807
+        y: 808
+        width: 6
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1f869bb201008dcf0800000000000000
+      internalID: -227431711729161999
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stalaktit_broken_8
+      rect:
+        serializedVersion: 2
+        x: 3807
+        y: 802
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 025a2723c7ae5be00800000000000000
+      internalID: 1060011106458838304
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stalaktit_broken_9
+      rect:
+        serializedVersion: 2
+        x: 3808
+        y: 790
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 95837b8dfc2f91ad0800000000000000
+      internalID: -2730884724515456935
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stalaktit_broken_10
+      rect:
+        serializedVersion: 2
+        x: 3808
+        y: 780
+        width: 6
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d49e963527b53a2a0800000000000000
+      internalID: -6727432871777539763
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stalaktit_broken_11
+      rect:
+        serializedVersion: 2
+        x: 3807
+        y: 759
+        width: 7
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c11187d0a199f51d0800000000000000
+      internalID: -3359798459820928740
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stalaktit_broken_12
+      rect:
+        serializedVersion: 2
+        x: 5121
+        y: 364
+        width: 11
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aea1fcadd79936b30800000000000000
+      internalID: 4279432836753070826
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stalaktit_broken_13
+      rect:
+        serializedVersion: 2
+        x: 5127
+        y: 351
+        width: 8
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: af8adc7407e215c60800000000000000
+      internalID: 7805070688985655546
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stalaktit_broken_14
+      rect:
+        serializedVersion: 2
+        x: 3642
+        y: 167
+        width: 43
+        height: 167
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 943663bfa9e8cc810800000000000000
+      internalID: 1786959948449997641
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stalaktit_broken_15
+      rect:
+        serializedVersion: 2
+        x: 5131
+        y: 333
+        width: 9
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3ade6a2eb95b52830800000000000000
+      internalID: 4045839521389407651
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stalaktit_broken_16
+      rect:
+        serializedVersion: 2
+        x: 3675
+        y: 57
+        width: 139
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f3db1fa2877fe96d0800000000000000
+      internalID: -2981673807784067777
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stalaktit_broken_17
+      rect:
+        serializedVersion: 2
+        x: 4247
+        y: 120
+        width: 10
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 78bf18dc5dd8c16c0800000000000000
+      internalID: -4171303205436523641
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stalaktit_broken_18
+      rect:
+        serializedVersion: 2
+        x: 4290
+        y: 125
+        width: 20
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 43ed5cb5030e79c20800000000000000
+      internalID: 3213283357454884404
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stalaktit_broken_19
+      rect:
+        serializedVersion: 2
+        x: 5059
+        y: 115
+        width: 43
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2ff0f66105397cdb0800000000000000
+      internalID: -4771683307992707086
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stalaktit_broken_20
+      rect:
+        serializedVersion: 2
+        x: 5052
+        y: 108
+        width: 11
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8c67350f2b56bcc00800000000000000
+      internalID: 921942367937984200
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable: {}
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
