@@ -762,11 +762,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8617835959266895927, guid: dbff0fe3f9ea43044a456e96b7dd0134, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -16.63
+      value: -20.8
       objectReference: {fileID: 0}
     - target: {fileID: 8617835959266895927, guid: dbff0fe3f9ea43044a456e96b7dd0134, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -90.86
+      value: 5.2
       objectReference: {fileID: 0}
     - target: {fileID: 8617835959266895927, guid: dbff0fe3f9ea43044a456e96b7dd0134, type: 3}
       propertyPath: m_LocalPosition.z
@@ -800,7 +800,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 90
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 110416090952355030, guid: dbff0fe3f9ea43044a456e96b7dd0134, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -1594,7 +1595,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 768845973}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 073797afb82c5a1438f328866b10b3f0, type: 3}
   m_Name: 
@@ -1785,7 +1786,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5118156429332188071, guid: d557efb39a56acd41a33a1f4bd64c725, type: 3}
       propertyPath: m_Mass
-      value: 0.01
+      value: 0.0001
       objectReference: {fileID: 0}
     - target: {fileID: 5118156429332188071, guid: d557efb39a56acd41a33a1f4bd64c725, type: 3}
       propertyPath: m_BodyType
@@ -1797,11 +1798,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5118156429332188071, guid: d557efb39a56acd41a33a1f4bd64c725, type: 3}
       propertyPath: m_GravityScale
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5118156429332188071, guid: d557efb39a56acd41a33a1f4bd64c725, type: 3}
       propertyPath: m_LinearDamping
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5118156429332188071, guid: d557efb39a56acd41a33a1f4bd64c725, type: 3}
       propertyPath: m_AngularDamping
@@ -2536,11 +2537,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1576243323855274190, guid: d0509a037a9734415882a1578c8747be, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: -21.04
       objectReference: {fileID: 0}
     - target: {fileID: 1576243323855274190, guid: d0509a037a9734415882a1578c8747be, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 25.53
       objectReference: {fileID: 0}
     - target: {fileID: 1576243323855274190, guid: d0509a037a9734415882a1578c8747be, type: 3}
       propertyPath: m_LocalPosition.z
@@ -2954,7 +2955,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1958183778}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 073797afb82c5a1438f328866b10b3f0, type: 3}
   m_Name: 
@@ -3129,7 +3130,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2146087485}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 073797afb82c5a1438f328866b10b3f0, type: 3}
   m_Name: 

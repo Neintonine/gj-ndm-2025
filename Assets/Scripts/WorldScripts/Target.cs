@@ -3,13 +3,20 @@ using UnityEngine;
 
 public sealed class Target : MonoBehaviour
 {
+    [SerializeField] private HUDGameCompletion hudInstance;
+    
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (!other.CompareTag("DivingBell"))
+        if (!other.CompareTag("Player"))
+        {
+            return;
+        }
+
+        if (!other.GetComponent<UbootController>().hasDivingBell)
         {
             return;
         }
         
-        Debug.Log("Game Complete");
+        this.hudInstance.ShowModal();
     }
 }

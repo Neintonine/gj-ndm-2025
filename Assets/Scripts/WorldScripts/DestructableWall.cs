@@ -16,7 +16,7 @@ public sealed class DestructableWall : MonoBehaviour
     {
         foreach (Rigidbody2D rigidbody in this._rigidbodies)
         {
-            rigidbody.WakeUp();
+            rigidbody.simulated = true;
         }
         
         _collider2D.enabled = false;

@@ -6,7 +6,6 @@ using UnityEngine.SceneManagement;
 
 public class UbootController : MonoBehaviour
 {
-
     public BombAttack bombAttack;
     public UbootMovement ubootMovement;
     public LaserAttack laserAttack;
@@ -15,10 +14,13 @@ public class UbootController : MonoBehaviour
     public UbootBoost ubootBoost;
     public Health health;
     public LaserRotation laserRotation;
+    public Transform divingBellTarget;
 
     public float speed = 5f;
     public bool stun;
 
+    public bool hasDivingBell = false;
+    
     private void Health_OnDeath()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
@@ -67,7 +69,7 @@ public class UbootController : MonoBehaviour
         }
 
     }
-
+    
     //Disable all Functions of Uboot
     public void Disablefunctions()
     {
@@ -82,5 +84,14 @@ public class UbootController : MonoBehaviour
         this.enabled = true;
 
         this.laserRotation.enabled = true;
+    }
+    
+    public void PickupDivingBell(DivingBell divingBell)
+    {
+        divingBell.transform.SetParent(this.divingBellTarget);
+        divingBell.transform.localPosition = Vector3.zero;
+        Rigidbody2D rigidbody = divingBell.GetComponent<Rigidbody2D>();
+        rigidbody.simulated = false;
+        this.hasDivingBell = true;
     }
 }

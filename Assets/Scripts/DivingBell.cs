@@ -17,8 +17,7 @@ public class DivingBell : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Player") && !isAttached)
         {
-            this.AttachChain(other.gameObject.GetComponent<Rigidbody2D>());
-            
+            other.gameObject.GetComponent<UbootController>().PickupDivingBell(this);
             this.FreeWay();
             this.StartBossFight();
         }
@@ -37,32 +36,6 @@ public class DivingBell : MonoBehaviour
         }
         
         this.turtle.gameObject.SetActive(false);
-    }
-
-
-    void AttachChain(Rigidbody2D target)
-    {
-
-        isAttached = true;
-
-        GameObject chainInstance = Instantiate(chainPrefab, transform.position, Quaternion.identity);
-        this.ChainTop = chainInstance.transform.GetChild(0).gameObject;
-        this.ChainDown = chainInstance.transform.GetChild(chainInstance.transform.childCount - 1).gameObject;
-
-        HingeJoint2D topJoint = this.ChainTop.GetComponent<HingeJoint2D>();
-        topJoint.connectedBody = target;
-        
-        this.transform.SetParent(this.ChainDown.transform);
-        this.transform.localPosition = Vector3.zero;
-
-        HingeJoint2D joint = this.gameObject.AddComponent<HingeJoint2D>();
-        joint.connectedBody = this.ChainDown.GetComponent<Rigidbody2D>();
-        joint.useLimits = true;
-        joint.limits = new JointAngleLimits2D
-        {
-            min = 0,
-            max = 180,
-        };
     }
 }
 
